@@ -1,0 +1,19 @@
+
+C# (pronounced see sharp) is a multi-paradigm programming 
+language encompassing strong typing, imperative, declarative, 
+functional, generic, object-oriented (class-based), 
+and component-oriented programming disciplines. 
+It was developed by Microsoft within its .NET initiative and 
+later approved as a standard by Ecma (ECMA-334) and ISO 
+(ISO/IEC 23270:2006). C# is one of the programming languages 
+designed for the Common Language Infrastructure.
+C# is intended to be a simple, modern, general-purpose,
+ object-oriented programming language.[6] Its development 
+ team is led by Anders Hejlsberg. The most recent version 
+ is C# 5.0, which was released on August 15, 2012.
+ 
+ 
+ 
+ 
+ 
+ 

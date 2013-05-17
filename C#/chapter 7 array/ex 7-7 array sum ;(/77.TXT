@@ -1,0 +1,44 @@
+
+			if (sum > sum1)
+                        {
+                            sum = bestSum;
+                            len = bestLen;
+                        }
+                        else
+                        {
+                            sum1 = bestSum;
+                            len1 = bestLen;
+                        }
+
+                        Console.WriteLine("The best sum of row {0} in the array  is {1}:", bestLen, bestSum  );
+----------------------------------------------------
+
+
+		Console.WriteLine("The sum of second number elements is {0}", sum);
+
+
+------------------------------------------------------
+
+	    Console.WriteLine("Enter a number!");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter a second number which is smaller then the first number!");
+            int k = int.Parse(Console.ReadLine());
+
+            int[] arr = new int[n];
+            int bestSum = 0;
+            
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write("Enter array value for [{0}]: ", i);
+                arr[i] = int.Parse(Console.ReadLine());
+                
+
+                for (int len = 0, sum = arr[0]; len <= k-1 && sum >= len - 1; len ++, sum += arr[len])
+                {
+                    Console.WriteLine("The sum of second number elements is {0}", sum);
+
+                   
+                }
+                   
+            }

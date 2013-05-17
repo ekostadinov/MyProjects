@@ -1,0 +1,44 @@
+Console.Write("Please, enter array length: ");
+        int length = int.Parse(Console.ReadLine());
+        int[] array = new int[length];
+
+        Console.WriteLine("Please, enter array values: ");
+
+        for (int i = 0; i < length; i++)
+        {
+            array[i] = int.Parse(Console.ReadLine());
+        }
+
+        int index = 0;
+        int len = 0;
+        int maxLen = 0;
+        int sum = 0;
+
+        for (int j = 0; j < length - 1; j++)
+        {
+            if (j <= length - 2)
+            {
+                if (array[j] == array[j + 1])
+                {
+                    len++;
+                    sum += array[j];
+                }
+                else
+                {
+                    len = 0;
+                }
+            }
+            if (len > maxLen)
+            {
+                maxLen = len;
+                index = j + 1 - len;
+            }
+        }
+        Console.WriteLine("The maximal sequence of equal elements is:
+");
+
+            for (int k = 0; k <= maxLen; k++)
+            {
+                Console.Write("{0} ", sum / maxLen);
+            }
+            Console.WriteLine("\nStarting at arr[{0}]", index);

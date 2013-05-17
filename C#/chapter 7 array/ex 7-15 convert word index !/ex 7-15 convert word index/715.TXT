@@ -1,0 +1,9 @@
+ for (int letter = 0; letter < alphabet.Length - 1; letter++ )
+                {
+                    for (int arrLetter = 0; arrLetter < alphabet.Length - 1; arrLetter++ )
+                    {
+                        letter = symbol;
+                        Console.WriteLine(arrLetter);
+
+                    }
+                }

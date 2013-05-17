@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex 11-1 LeapYear", "ex 11-1 LeapYear\ex 11-1 LeapYear.csproj", "{D2D678FA-3D4E-43CC-992A-787FFD691DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex 11-1 simple math", "ex 11-1 simple math\ex 11-1 simple math.csproj", "{EF7E4E5D-726B-4DFA-AA7D-2331A34F5D35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2D678FA-3D4E-43CC-992A-787FFD691DAB}.Debug|x86.ActiveCfg = Debug|x86
+		{D2D678FA-3D4E-43CC-992A-787FFD691DAB}.Debug|x86.Build.0 = Debug|x86
+		{D2D678FA-3D4E-43CC-992A-787FFD691DAB}.Release|x86.ActiveCfg = Release|x86
+		{D2D678FA-3D4E-43CC-992A-787FFD691DAB}.Release|x86.Build.0 = Release|x86
+		{EF7E4E5D-726B-4DFA-AA7D-2331A34F5D35}.Debug|x86.ActiveCfg = Debug|x86
+		{EF7E4E5D-726B-4DFA-AA7D-2331A34F5D35}.Debug|x86.Build.0 = Debug|x86
+		{EF7E4E5D-726B-4DFA-AA7D-2331A34F5D35}.Release|x86.ActiveCfg = Release|x86
+		{EF7E4E5D-726B-4DFA-AA7D-2331A34F5D35}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

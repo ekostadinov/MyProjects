@@ -1,0 +1,17 @@
+for (int i = result, z = result2; i <=n && i > 0 && z <=n && z >= 0; i = i / 16, z = i % 16)
+            {
+                Console.WriteLine(i + " -> " + z );
+
+                
+            }
+
+-----------------------------------------------------------
+
+ for (int i = result; i <= n && i >= 0; i = i / 16)
+            {
+                Console.WriteLine(i);
+                if (i == 0)
+                {                    
+                break;
+                }
+            }

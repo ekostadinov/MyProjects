@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex 8-11 roman in arabic numerals", "ex 8-11 roman in arabic numerals\ex 8-11 roman in arabic numerals.csproj", "{D91618ED-20EF-4C4A-BA88-D5D26382C08A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D91618ED-20EF-4C4A-BA88-D5D26382C08A}.Debug|x86.ActiveCfg = Debug|x86
+		{D91618ED-20EF-4C4A-BA88-D5D26382C08A}.Debug|x86.Build.0 = Debug|x86
+		{D91618ED-20EF-4C4A-BA88-D5D26382C08A}.Release|x86.ActiveCfg = Release|x86
+		{D91618ED-20EF-4C4A-BA88-D5D26382C08A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

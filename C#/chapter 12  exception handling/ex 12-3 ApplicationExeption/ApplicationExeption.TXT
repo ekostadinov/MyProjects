@@ -1,0 +1,55 @@
+Йерархия на изключенията в:
+
+System.Object 
+  System.Object 
+  System.Exception
+    System.ApplicationException
+
+	
+Стандартни изключения:
+
+	Microsoft.JScript.BreakOutOfFinally - This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. Represents the exception state when code execution breaks out of a finally block.
+    Microsoft.JScript.ContinueOutOfFinally - This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. Represents the exception state when code execution continues out of a finally block.
+    Microsoft.JScript.JScriptException - This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.The exception that is thrown by JScript to notify a common language runtime (CLR) host or program that an error occurred. A JScriptException usually takes a JSError enumeration value.
+    Microsoft.JScript.NoContextException - This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. The exception that is thrown when there is no code Context associated with a JScriptException.
+    Мicrosoft.JScript.ReturnOutOfFinally - This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. Represents the exception state when code execution returns out of a finally block.
+    System.Reflection.InvalidFilterCriteriaException - The exception that is thrown in FindMembers when the filter criteria is not valid for the type of filter you are using.
+    System.Reflection.TargetException - Represents the exception that is thrown when an attempt is made to invoke an invalid target.
+    System.Reflection.TargetInvocationException - The exception that is thrown by methods invoked through reflection. This class cannot be inherited.
+    System.Reflection.TargetParameterCountException - The exception that is thrown when the number of parameters for an invocation does not match the number expected. This class cannot be inherited.
+    System.Threading.WaitHandleCannotBeOpenedException - The exception that is thrown when an attempt is made to open a system mutex or semaphore that does not exist.	
+	
+	
+	
+	
+	Constructors:
+	ApplicationException() - Initializes a new instance of the ApplicationException class.
+  	ApplicationException(String) - Initializes a new instance of the ApplicationException class with a specified error message.
+	ApplicationException(SerializationInfo, StreamingContext) - Initializes a new instance of the ApplicationException class with serialized data.
+  	ApplicationException(String, Exception) - Initializes a new instance of the ApplicationException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+
+	Properties:
+	Data - Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from Exception.)
+	HelpLink - Gets or sets a link to the help file associated with this exception. (Inherited from Exception.)
+  	HResult	- Gets or sets HRESULT, a coded numerical value that is assigned to a specific exception. (Inherited from Exception.)
+  	InnerException - Gets the Exception instance that caused the current exception. (Inherited from Exception.)
+  	Message - Gets a message that describes the current exception. (Inherited from Exception.)
+	Source - Gets or sets the name of the application or the object that causes the error. (Inherited from Exception.)
+  	StackTrace - Gets a string representation of the immediate frames on the call stack. (Inherited from Exception.)
+	TargetSite - Gets the method that throws the current exception. (Inherited from Exception.)
+	
+	
+	Methods
+	Equals(Object) - Determines whether the specified object is equal to the current object. (Inherited from Object.)
+  	Finalize - Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from Object.)
+  	GetBaseException - When overridden in a derived class, returns the Exception that is the root cause of one or more subsequent exceptions. (Inherited from Exception.)
+  	GetHashCode	- Serves as a hash function for a particular type. (Inherited from Object.)
+	GetObjectData - When overridden in a derived class, sets the SerializationInfo with information about the exception. (Inherited from Exception.)
+  	GetType - Gets the runtime type of the current instance. (Inherited from Exception.) In XNA Framework 3.0, this member is inherited from Object.GetType().
+  	MemberwiseClone	- Creates a shallow copy of the current Object. (Inherited from Object.)
+  	ToString - Creates and returns a string representation of the current exception. (Inherited from Exception.)
+	
+	Events
+ 	SerializeObjectState - Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from Exception.)
+
+	

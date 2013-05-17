@@ -1,0 +1,16 @@
+Йерархия на изключенията в:
+
+System.Object 
+  System.Exception
+    System.SystemException
+      System.IO.IOException
+	  
+Стандартните изключения са:	  
+
+    System.IO.DirectoryNotFoundException - is thrown when part of a file or directory cannot be found.
+    System.IO.DriveNotFoundException - is thrown when trying to access a drive or share that is not available.
+    System.IO.EndOfStreamException - is thrown when reading is attempted past the end of a stream.
+    System.IO.FileLoadException - is thrown when a managed assembly is found but cannot be loaded.
+    System.IO.FileNotFoundException - is thrown when an attempt to access a file that does not exist on disk fails.
+    System.IO.PathTooLongException - is thrown when a path or file name is longer than the system-defined maximum length.
+    System.IO.PipeException - thrown when an error occurs within a named pipe.

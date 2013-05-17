@@ -1,0 +1,43 @@
+Йерархия на изключенията в:
+
+System.Object 
+  System.Exception
+    System.SystemException
+      System.IO.IOException
+		System.IO.FileNotFoundException - is thrown when an attempt to access a file that does not exist on disk fails.
+    
+	Constructors:
+	FileNotFoundException()	Initializes a new instance of the FileNotFoundException class with its message string set to a system-supplied message and its HRESULT set to COR_E_FILENOTFOUND.
+    FileNotFoundException(String)	Initializes a new instance of the FileNotFoundException class with its message string set to message and its HRESULT set to COR_E_FILENOTFOUND.
+	FileNotFoundException(SerializationInfo, StreamingContext)	Initializes a new instance of the FileNotFoundException class with the specified serialization and context information.
+  	FileNotFoundException(String, Exception)	Initializes a new instance of the FileNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+  	FileNotFoundException(String, String)	Initializes a new instance of the FileNotFoundException class with its message string set to message, specifying the file name that cannot be found, and its HRESULT set to COR_E_FILENOTFOUND.
+  	FileNotFoundException(String, String, Exception)	Initializes a new instance of the FileNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+
+	Properties:
+	Data -	Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from Exception.)
+  	FileName -	Gets the name of the file that cannot be found.
+	FusionLog - Gets the log file that describes why loading of an assembly failed.
+  	HelpLink - Gets or sets a link to the help file associated with this exception. (Inherited from Exception.)
+    HResult	- Gets or sets HRESULT, a coded numerical value that is assigned to a specific exception. (Inherited from Exception.)
+    InnerException - Gets the Exception instance that caused the current exception. (Inherited from Exception.)
+  	Message	 - Gets the error message that explains the reason for the exception. (Overrides Exception.Message.) In XNA Framework 3.0, this member is inherited from Exception.Message.
+  	Source - Gets or sets the name of the application or the object that causes the error. (Inherited from Exception.)
+    StackTrace - Gets a string representation of the immediate frames on the call stack. (Inherited from Exception.)
+	TargetSite - Gets the method that throws the current exception. (Inherited from Exception.)
+	
+	Methods
+	Equals(Object) - Determines whether the specified object is equal to the current object. (Inherited from Object.)
+    Finalize - Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from Object.)
+    GetBaseException -	When overridden in a derived class, returns the Exception that is the root cause of one or more subsequent exceptions. (Inherited from Exception.)
+    GetHashCode	- Serves as a hash function for a particular type. (Inherited from Object.)
+	GetObjectData - Sets the SerializationInfo object with the file name and additional exception information. (Overrides Exception.GetObjectData(SerializationInfo, StreamingContext).)
+    GetType - Gets the runtime type of the current instance. (Inherited from Exception.) In XNA Framework 3.0, this member is inherited from Object.GetType().In Portable Class Library Portable Class Library, this member is inherited from Object.GetType().
+    MemberwiseClone	- Creates a shallow copy of the current Object. (Inherited from Object.)
+  	ToString - Returns the fully qualified name of this exception and possibly the error message, the name of the inner exception, and the stack trace. (Overrides Exception.ToString().) In XNA Framework, this member is overridden by ToString().
+	
+	Events
+ 	SerializeObjectState	Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from Exception.)
+	
+
+	
