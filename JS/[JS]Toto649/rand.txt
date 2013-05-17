@@ -1,0 +1,35 @@
+function generateRandomNumber(to, from) {
+	if(!from) from = 0;
+	if(!to) to = 100;
+
+	return Math.floor(Math.random() * (to - from) + from);
+}
+
+
+==================================
+
+function moveSphere(){
+    var windowHoles = document.getElementById('sphereHoles');
+    style = windowHoles.style;
+
+    style.position = 'absolute';
+    style.backgroundColor = 'red';
+
+    var i = 0;
+    var rotations = 3;
+    var degreeToMove = 100;
+
+    for (i = 0; i < rotations; i++) {
+        degreeToMove = degreeToMove + 100;
+        window.setTimeout(animateSphere(degreeToMove), 3000);
+    }
+
+    return windowHoles;
+}
+
+
+function animateSphere(degreeToMove) {
+    style.backgroundColor = 'blue';
+    style.left = style.left + degreeToMove + 'px';
+    style.top = style.top - degreeToMove + 'px';
+}

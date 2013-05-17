@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bingo Game Toto 6/49</title>
+    <style style="text/css"></style>
+    <link type="text/css" rel="stylesheet" href="GameStyles.css" />
+    <script type="text/javascript" src="GameScript.js"></script>
+</head>
+<body>
+
+    <div id="wrapper">
+	<a href='#' id="test" onclick="bouncingBalls()">Add bouncing balls</a>
+			
+        <div id="header">
+            <div id="commandButtons">
+                <input class="commandGameButton" type="button" value="Start" onclick="moveSphere(event)" />                
+                <input class="commandGameButton" type="button" value="Pick Balls"  onclick="winnerBallsChecker()"/>                
+                <input class="commandGameButton" type="button" value="Stop" onclick="clearBox(event)"/>
+				</div>
+
+            <div id="finalChosenBalls">
+                     
+            </div>
+        </div>
+
+        <div id="content>">
+
+            <div id="ballSphere">
+                <div id="sphereHoles">
+                    <div class="sphereWindowHole"></div>
+                    <div class="sphereWindowHole"></div>
+                    <div class="sphereWindowHole"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

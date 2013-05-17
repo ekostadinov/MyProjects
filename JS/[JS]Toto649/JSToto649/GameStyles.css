@@ -1,0 +1,43 @@
+body {
+}
+
+.commandGameButton{
+    width: 70px;
+    height: 65px;
+    border-radius: 50px;
+}
+
+#finalChosenBalls {
+    width: 545px;
+    height: 95px;
+    border: 1px solid black;
+    display:inline;
+    left:230px;
+    top:10px;
+    position:fixed;
+}
+
+#ballSphere {
+    border: 1px solid black;
+    width: 485px;
+    height: 485px;
+    display: block;
+    margin-top: 65px;    
+    border-radius: 400px;
+}
+
+#sphereHoles {
+    width: 45px;
+    height: 45px;
+    position:relative;
+    margin-top: 5px;
+    margin-left: 180px;
+}
+
+.sphereWindowHole {
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    display:inline-block;
+    border-radius:10px;
+}
