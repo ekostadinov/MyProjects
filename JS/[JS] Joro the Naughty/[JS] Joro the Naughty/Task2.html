@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task 2 - Joro the Naughty</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+	<div id="console"></div>	
+    <script src="scripts/js-console.js"></script>    
+    
+    <script>
+        var args = []; //new Array();
+        args[0] = '6 7 3';
+        args[1] = '0 0';
+        args[2] = '2 2';
+        args[3] = '-2 2';
+        args[4] = '3 -1';
+
+        Solve(args);
+
+        function Solve(args) {
+
+            var result = '';
+            var N, M, J, start = 0;
+            var input = args[0];
+            var inputStart = args[1];
+            
+
+            N = input[0];
+            M = input[2];
+            J = input[4];
+            startRow = inputStart[0]; //get start position by row and col, from the input
+            startCol = inputStart[2]; 
+            
+
+            //1.create matrix - our map
+            var field = [N];  //new Array(N);
+            var i;
+            for (i = 0; i < N; i++) {
+                field[i] = [M]; //new Array(M);
+            }
+
+            //calculate jump
+            start = field[startRow][startCol]; //not working properly, cat not be used !?
+
+            //fill the matrix
+            var row, col = 0;
+            for (row = 0; row < N; row++) {
+                
+                for (col = 0; col < M; col++) {
+
+                    field[row][col] = (row * M + 1) + col;
+                    
+                    //if (field[row][col] == field[startRow][startCol]) { //mark the start spot
+                    //    field[row][col] = 'S';
+                    //    jsConsole.write(field[row][col]);
+                    //}
+
+                    //if (field[row][col] < 10 && field[row][col] > 0) { //to be equal matrix, we put 0 infront of the smaller numbers
+                    //    jsConsole.write('0' + field[row][col] + ' ');
+                    //}
+                    //else {
+                    //    jsConsole.write(field[row][col] + ' ');
+                    //}
+                    
+                }
+                //jsConsole.writeLine();
+            }
+           
+            //2.calculate map and jumps
+            var jumpPattern, jumpMap = '';
+            var j, jumpRow, jumpCol, sum = 0;
+
+            //collect visited jump positions
+            var visited = []; //new Array();
+            
+            var jumpsMade = 0;
+            
+            for (j = 2; j < args.length; j++) {
+                jumpPattern = args[j];
+                jumpMap = jumpPattern.split(' ');
+                jumpRow = jumpMap[0];
+                jumpCol = jumpMap[1];
+               
+                
+
+                
+                
+                        if (jumpsMade == 0) {
+                            sum += field[startRow][startCol]; //collect start position points - once
+                        }
+
+                        //check if rabbit is outside of the field
+                        if ((jumpRow > N || jumpRow < 0) || (jumpCol < 0 || jumpCol > M)) {
+                            result = 'escaped ' + sum; //rabbit has escaped
+                            break;
+                        }
+
+                        var jump = field[jumpRow][jumpCol];     //make jump
+
+                        jumpsMade++;    //increase jumps count
+
+                        //check for previous position jump !!!! maybe store positions as string
+                        var v = 0;
+                        for (v = 0; v < visited.length; v++) {
+
+                            if (jump == visited[v]) { //try - field[jumpRow][jumpCol]
+                                result = "caught" + jumpsMade;   //rabbit has been caught + count jumps made
+                                break;
+                            }
+
+                        }
+
+                        visited.push(jump);        //mark as visited
+                        sum += jump; //collect new position points
+
+                        //if rabbit jump pattern is over and have not escaped or caught - continue using it form current possition
+                        if (j == args.length) {
+                            //field[startRow][startCol] = field[jumpRow][jumpCol];
+                            startRow = jumpRow;
+                            startCol = jumpCol;
+
+                }
+            }
+
+            return result;
+        }
+    </script>
+
+</body>
+</html>
