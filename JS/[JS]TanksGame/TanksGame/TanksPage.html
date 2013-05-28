@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tanks game</title>
+    <script type="text/javascript" src="TanksScript.js"></script>
+</head>
+<body onload="generateField()">
+
+    <div id="battleField" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)"></div>
+    <div id="enemyFront"></div>
+    <button id="start">Start Battle</button>
+    <div id="console"></div>
+    
+    
+    <script>
+
+        'use strict';
+        document.getElementById("start").addEventListener('click', startGame);
+        
+        function handleDragStart(e) {
+            e.dataTransfer.setData("dragged-id", e.target.id);            
+            e.target.style.opacity = '0.5';            
+        }
+
+        //function handleDragOver(e) {
+        //    e.preventDefault();            
+        //    e.target.setAttribute('src', 'images/tankDamaged.jpg');            
+        //}
+        //
+        //function handleDragLeave(e) {
+        //    e.target.setAttribute('src', 'close.png');
+        //}
+
+        function handleDragEnd(e) {
+            e.target.style.opacity = '1';            
+        }
+
+        //function handleDrop(e) {
+        //    var currentTankCount = localStorage.getItem('count') | 0;
+        //    var endGame = false;
+        //    if (currenttankCount === 1) {
+        //        var gameEnd = new Date().getTime() / 1000;
+        //        var gameTime = gameEnd - (localStorage.getItem('start') | 0);
+        //
+        //        endGame = true;
+        //    }
+        //
+        //    
+        //    e.preventDefault();
+        //    var tankId = e.dataTransfer.getData("dragged-id");
+        //    var tankNode = document.getElementById(tankId);
+        //    tankNode.parentNode.removeChild(tankNode);
+        //}        
+    </script>
+
+
+</body>
+</html>

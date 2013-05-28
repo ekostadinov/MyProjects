@@ -1,0 +1,51 @@
+function getGameScore() {
+            if (!localStorage.getItem('gameScore')) {
+                var gameScore = {};
+                localStorage.setItem('gameScore', JSON.stringify(gameScore));
+            }
+
+            return JSON.parse(localStorage.getItem('gameScore'));
+        }
+        function setGameScore(gameTime) {
+            var person = prompt("You Win! Please enter your name");
+            var scoreTable = getGameScore();
+
+            scoreTable[person] = gameTime;
+
+            //transfer to array
+            var sortableTable = [];
+            for (var key in scoreTable) {
+                sortableTable.push([key, scoreTable[key]])
+            }
+            sortableTable.sort(function (a, b) { return a[1] - b[1] });
+
+            if (sortableTable.length > 5) {
+                var removed = sortableTable.pop();
+            }
+
+            visualizeScore(sortableTable);
+
+            //transfer to object
+            var object = {};
+            for (var i = 0; i < sortableTable.length; i++) {
+                object[sortableTable[i][0]] = sortableTable[i][1];
+            }
+            console.log(object);
+            localStorage.setItem('gameScore', JSON.stringify(object));
+
+        }
+        function visualizeScore(score) {
+            var scoreTable = document.createElement('ul');
+            var place = 1;
+            for (var player in score) {
+                var li = document.createElement('li');
+                li.innerHTML = place + ". " + score[player][0] + "-" + score[player][1] + " sec";
+                scoreTable.appendChild(li);
+                place++;
+            }
+            var cons = document.getElementById('console');
+            while (cons.firstChild) {
+                cons.removeChild(cons.firstChild);
+            }
+            cons.appendChild(scoreTable);
+        }
