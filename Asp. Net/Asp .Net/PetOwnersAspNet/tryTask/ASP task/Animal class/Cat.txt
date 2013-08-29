@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ......Interfaces;
+using ......Enumerations;
+
+namespace .....
+{
+    public class Cat : PetBase, IAnimal
+    {
+        //constructor
+        public Cat(string petName, string petSpecies, Gender petGender, int petAge) 
+		: base (petName, petSpecies, petGender, petAge)
+        {
+        }
+
+        //Interface method
+        public override string Move()
+        {
+            return string.Format("Your cat is jumping!");
+        }
+		
+		public override ToString()
+        {
+            return string.Format(this.PetName + " " + this.PetSpecies + " " + this.PetAge);
+        }
+		
+    }
+}

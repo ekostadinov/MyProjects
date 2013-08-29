@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace .....
+{
+    public abstract class PersonBase 
+    {
+        #region Fields
+        
+        private string firstName;
+        private string lastName;        
+        
+        #endregion
+        
+        //constructor
+        public PersonBase(string firstName, string lastName)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;            
+        }
+        
+        public PersonBase()
+        {
+        }
+        
+        //properties
+       
+        
+        public string FirstName
+        {
+            get
+            {
+                return this.firstName;
+            }
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("The first name should contain some letters");
+                }
+                this.firstName = value;
+            }
+        }
+        
+        public string LastName
+        {
+            get
+            {
+                return this.lastName;
+            }
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("The last name should contain some letters");
+                }
+                this.lastName = value;
+            }
+        }
+        
+        
+
+        #endregion
+        
+        // methods
+       
+       
+    }
+}

@@ -1,0 +1,58 @@
+.web
+.data
+.test
+
+
+http://www.youtube.com/watch?v=J1SaaKIKApY
+38'
+
+
+1. create logic for pets
+- base class + derived classes for the pets and for the owners
+ inheritance Aminal/Pet + Person/Owner
+
+for the class ->
+ 	//fields 
+        //constructors
+        //properties
+        //methods
+        //Interface methods
+
+use logic from:
+https://github.com/ekostadinov/MyProjects/tree/master/C%23/SideshowBob/SideshowBob/Person
+
+
+
+
+2. the object should override the ToString () method 
+to return the name, species and age of the pet- for instance “Rex, Dog, 3”.
+use extesion methods in JS!
+
+3. grid for pet owners -> use array to store them
+
+ifragistic videos:
+http://www.youtube.com/playlist?list=PLDAFFE8C757FED32E
+
+read instalation help:
+http://www.infragistics.com/help/topic/1CA6D31D-2BB1-4912-86BD-D401FFE32F34#ASP_Installing_NetAdvantage
+
+user: email
+pass: NPRRGR 
+
+51' create project
+http://www.youtube.com/watch?v=Oz1fkRYpwEw
+
+http://telerikacademy.com/Courses/Courses/Details/21
+
+
+*add Google authentication
+Project > App_Start folder > AuthConfig.cs
+unmark last line //OAuthWebSecurity.registerGoogleClient();
+
+*install Entity Framework and MS EF Razor 2
+from Nuget packages!
+or Update them
+
+*use samples code:
+http://localhost:1024/samplesbrowser/Samples/WebHierarchicalDataGrid/Organization/ExcelStyleFiltering/Default.aspx?cn=hierarchical-data-grid&sid=9119c46b-1735-4bab-8bcd-4041270e59fe
+

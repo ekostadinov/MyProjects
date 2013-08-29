@@ -1,0 +1,8 @@
+namespace .....
+{
+    public enum Gender
+    { 
+        Male,
+        Female
+    }
+}

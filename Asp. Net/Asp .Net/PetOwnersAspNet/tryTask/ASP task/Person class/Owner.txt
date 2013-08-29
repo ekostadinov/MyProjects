@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ......
+{
+    public abstract class Owner : PersonBase
+    {
+        private int age;
+		
+        //constructor
+        public Owner(string firstName, string lastName, int age) 
+		: base(firstName, lastName)
+        {
+            this.age = age;
+        }
+
+        public Owner()
+        {
+        }
+        
+		//properties
+		public int Age
+        {
+            get
+            {
+                return this.age;
+            }
+            set
+            {
+                if (value <=1 OR value < 100)
+                {                                       
+                    throw new ArgumentOutOfRangeException("Owner must be at in range 1-100 years old.");
+                }
+				this.age = value; 
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ......Interfaces;
+using ......Enumerations;
+
+namespace .....
+{
+    public class Fish : PetBase, IAnimal
+    {
+        //constructor
+        public Fish(string petName, string petSpecies, Gender petGender, int petAge) 
+		: base (petName, petSpecies, petGender, petAge)
+        {
+        }
+
+        //Interface method
+        public override string Move()
+        {
+            return string.Format("Your fish is swiming!");
+        }
+		
+		public override ToString()
+        {
+            return string.Format(this.PetName + " " + this.PetSpecies + " " + this.PetAge);
+        }
+		
+    }
+}

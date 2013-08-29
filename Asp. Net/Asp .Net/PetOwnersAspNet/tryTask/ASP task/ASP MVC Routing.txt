@@ -1,0 +1,25 @@
+15' - use Users logic and replace with Owners? 
+
+install RouteDebugger from Nuget
+
+Web.config > search for debugger enabled:true
+
+create controller > Solution explorer >
+Controllers folder > right-click > Add >
+Controller
+
+46' - create UsersController
+
+in the UsersController class in the ActionResult method
+we can return File(byte[]fileContents, string contentType);
+contentType - description of the returned result;
+return File(@"C:\task\grid.infra", "contentType got from Google");
+or see it from some infragistics sample using the Chrome inspect 
+element > Network > select left NAME sub-window item 
+Headers > Response Headers search for content type 1:16:12
+
+return object (Owner) as JSON object 1:21:00
+
+custom error page 2:22:00
+
+

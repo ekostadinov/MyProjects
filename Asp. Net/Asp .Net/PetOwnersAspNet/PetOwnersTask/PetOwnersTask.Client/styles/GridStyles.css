@@ -1,0 +1,53 @@
+﻿.current {
+    font-family: "Times New Roman" , Times, serif;
+    font-size: medium;
+}
+
+.link {
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+.pager {
+    background-color: #C0C0C0;
+}
+
+.activeCell {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: large;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFFF00;
+}
+
+.activeRow {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: large;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #0072ff;
+}
+
+#header {
+    height: 150px;
+    width:100%;
+background-color:#3aafbb;
+color:white;
+}
+
+
+footer {
+    background-color:#3aafbb;
+    height: 75px;
+    color:white;
+}
+
+#header-logo {
+    position:absolute;
+    top:50px;
+    left:50px;
+}

@@ -1,0 +1,98 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace .....
+{
+    public abstract class PetBase : IAnimal
+    {
+       //fields        
+        private string petName;
+        private string petSpecies;
+		private Gender petGender;
+        private int petAge;
+        
+        //constructor
+        public PetBase(string petName, string petSpecies, Gender petGender, int age)
+        {
+            this.petName = petName;
+            this.petSpecies = petSpecies;
+            this.Gender = gender;
+            this.Age = age;
+        }
+        
+        public PetBase()
+        {
+        }
+        
+        //properties        
+        public Gender PetGender
+        {
+            get
+            {
+                return this.petGender;
+            }
+            set
+            {
+                this.petGender = value;
+            }
+        }
+        
+        public string PetName
+        {
+            get
+            {
+                return this.petName;
+            }
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("The pet's name should contain some letters");
+                }
+                this.firstName = value;
+            }
+        }
+        
+        public string PetSpecies
+        {
+            get
+            {
+                return this.petSpecies;
+            }
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("The pet's species should contain some letters");
+                }
+                this.lastName = value;
+            }
+        }
+        
+        public int PetAge
+        {
+            get
+            {
+                return this.petAge;
+            }
+            set
+            {
+                if (value < 0)
+                {                
+                    throw new ArgumentOutOfRangeException("Pet's age must be at least 0 years old.");
+                }
+				
+                this.petAge = value;
+            }
+        }
+        
+        // methods
+		public abstract string Move()
+		{
+			return string.Format("Your pet is moving!");
+		}
+    }
+}
