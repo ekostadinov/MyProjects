@@ -67,12 +67,23 @@ namespace SeleniumTests
             driver.FindElement(By.Name("max")).Clear();
             driver.FindElement(By.Name("max")).SendKeys("2");
             driver.FindElement(By.XPath("//input[@value='Get Numbers']")).Click();
-            driver.FindElement(By.CssSelector("form > input[type=\"submit\"]")).Click();
-            driver.FindElement(By.CssSelector("form > input[type=\"submit\"]")).Click();
-            driver.FindElement(By.CssSelector("form > input[type=\"submit\"]")).Click();
-            driver.FindElement(By.CssSelector("form > input[type=\"submit\"]")).Click();
-            driver.FindElement(By.CssSelector("form > input[type=\"submit\"]")).Click();
-            driver.FindElement(By.CssSelector("form > input[type=\"submit\"]")).Click();
+            // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | null | ]]
+            String fiRand = driver.FindElement(By.CssSelector("pre.data")).Text;
+            Console.WriteLine(fiRand);
+            // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | null | ]]
+            driver.Navigate().Refresh();
+            // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | null | ]]
+            String newRand = driver.FindElement(By.CssSelector("pre.data")).Text;
+            Console.WriteLine(newRand);
+            // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | null | ]]
+            // ERROR: Caught exception [ERROR: Unsupported command [getEval | javascript{storedVars['fiRand']===storedVars['newRand']} | ]]
+            Console.WriteLine(c);
+            // ERROR: Caught exception [unknown command [while]]
+            // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | null | ]]
+            driver.Navigate().Refresh();
+            String newRand = driver.FindElement(By.CssSelector("pre.data")).Text;
+            Console.WriteLine(newRand);
+            // ERROR: Caught exception [unknown command [endWhile]]
         }
         private bool IsElementPresent(By by)
         {

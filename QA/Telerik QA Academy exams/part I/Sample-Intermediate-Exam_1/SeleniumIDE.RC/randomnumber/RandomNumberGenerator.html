@@ -47,33 +47,98 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=form &gt; input[type=&quot;submit&quot;]</td>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=form &gt; input[type=&quot;submit&quot;]</td>
+	<td>storeText</td>
+	<td>css=pre.data</td>
+	<td>fiRand</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${fiRand}</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=form &gt; input[type=&quot;submit&quot;]</td>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=form &gt; input[type=&quot;submit&quot;]</td>
+	<td>refresh</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=form &gt; input[type=&quot;submit&quot;]</td>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=form &gt; input[type=&quot;submit&quot;]</td>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=pre.data</td>
+	<td>newRand</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${newRand}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars['fiRand']===storedVars['newRand']}</td>
+	<td>c</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${c}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars['fiRand']==storedVars['newRand']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=pre.data</td>
+	<td>newRand</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${newRand}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
 	<td></td>
 </tr>
 </tbody></table>
