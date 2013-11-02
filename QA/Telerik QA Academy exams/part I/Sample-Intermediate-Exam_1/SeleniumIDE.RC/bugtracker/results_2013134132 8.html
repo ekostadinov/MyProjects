@@ -1,0 +1,418 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>15</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>15</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.37</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">NoSuchBugYetTest</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">CreateBugTest</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">CreateBugTestFunctionalProjectSpecific</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">NoSuchBugYetTest.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">NoSuchBugYetTest</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/btnet/bugs.aspx</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - bugs</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=lucene_input</td>
+	<td>21213221</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//input[@value='search text']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=p</td>
+	<td>No bugs yet.</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>css=p</td>
+	<td>No bugs yet.</td>
+</tr>
+
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">CreateBugTest.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CreateBugTest</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://ifdefined.com/btnet/bugs.aspx</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - bugs</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=add new bug</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - Create Bug</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=project_label</td>
+	<td>exact:Project:</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=project_label</td>
+	<td>exact:Project:</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=project</td>
+	<td>label=HasCustomFieldsProject</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=option[value="3"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">CreateBugTestFunctionalProjectSpecific.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CreateBugTestFunctionalProjectSpecific</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://ifdefined.com/btnet/bugs.aspx</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - bugs</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=add new bug</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - Create Bug</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=project_label</td>
+	<td>exact:Project:</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=project_label</td>
+	<td>exact:Project:</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=project</td>
+	<td>label=HasCustomFieldsProject</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=option[value="3"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=short_desc</td>
+	<td>Out-of-frame Telerik Rad Rotator contol</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=org</td>
+	<td>label=developers</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=category</td>
+	<td>label=bug</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=priority</td>
+	<td>label=med</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=assigned_to</td>
+	<td>label=admin</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Samplecustomfield</td>
+	<td>When selected the Rad rotator in vertical position shows the pictures out of frame with wifth 600 and height 150px</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=Anothersamplecustomfield</td>
+	<td>label=red</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=comment</td>
+	<td>Get over it!</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=submit_button</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=bugid_label</td>
+	<td>Bug ID:</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=bugid_label</td>
+	<td>Bug ID:</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/NoSuchBugYetTest.html
+info: Executing: |open | /btnet/bugs.aspx |  |
+info: Executing: |verifyTitle | BugTracker.NET - bugs |  |
+info: Executing: |type | id=lucene_input | 21213221 |
+info: Executing: |clickAndWait | //input[@value=&apos;search text&apos;] |  |
+info: Executing: |waitForText | css=p | No bugs yet. |
+info: Executing: |verifyText | css=p | No bugs yet. |
+info: Starting test /selenium-server/tests/CreateBugTest.html
+info: Executing: |open | http://ifdefined.com/btnet/bugs.aspx |  |
+info: Executing: |verifyTitle | BugTracker.NET - bugs |  |
+info: Executing: |clickAndWait | link=add new bug |  |
+info: Executing: |verifyTitle | BugTracker.NET - Create Bug |  |
+info: Executing: |waitForText | id=project_label | exact:Project: |
+info: Executing: |verifyText | id=project_label | exact:Project: |
+info: Executing: |select | id=project | label=HasCustomFieldsProject |
+info: Executing: |clickAndWait | css=option[value=&quot;3&quot;] |  |
+info: Executing: |waitForText | id=project | [no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject |
+info: Executing: |verifyText | id=project | [no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject |
+info: Executing: |waitForText | id=label_pcd1 | Project-specific |
+info: Executing: |verifyText | id=label_pcd1 | Project-specific |
+info: Starting test /selenium-server/tests/CreateBugTestFunctionalProjectSpecific.html
+info: Executing: |open | http://ifdefined.com/btnet/bugs.aspx |  |
+info: Executing: |verifyTitle | BugTracker.NET - bugs |  |
+info: Executing: |clickAndWait | link=add new bug |  |
+info: Executing: |verifyTitle | BugTracker.NET - Create Bug |  |
+info: Executing: |waitForText | id=project_label | exact:Project: |
+info: Executing: |verifyText | id=project_label | exact:Project: |
+info: Executing: |select | id=project | label=HasCustomFieldsProject |
+info: Executing: |click | css=option[value=&quot;3&quot;] |  |
+info: Executing: |waitForText | id=project | [no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject |
+info: Executing: |verifyText | id=project | [no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject |
+info: Executing: |waitForText | id=label_pcd1 | Project-specific |
+info: Executing: |verifyText | id=label_pcd1 | Project-specific |
+info: Executing: |type | id=short_desc | Out-of-frame Telerik Rad Rotator contol |
+info: Executing: |select | id=org | label=developers |
+info: Executing: |select | id=category | label=bug |
+info: Executing: |select | id=priority | label=med |
+info: Executing: |select | id=assigned_to | label=admin |
+info: Executing: |type | id=Samplecustomfield | When selected the Rad rotator in vertical position shows the pictures out of frame with wifth 600 and height 150px |
+info: Executing: |select | id=Anothersamplecustomfield | label=red |
+info: Executing: |type | id=comment | Get over it! |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | id=submit_button |  |
+info: Executing: |waitForText | id=bugid_label | Bug ID: |
+info: Executing: |verifyText | id=bugid_label | Bug ID: |
+info: Executing: |waitForText | id=project | [no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject |
+info: Executing: |verifyText | id=project | [no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject |
+info: Executing: |waitForText | id=label_pcd1 | Project-specific |
+info: Executing: |verifyText | id=label_pcd1 | Project-specific |
+</pre></body></html>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.google.com/%20" />
+<title>GoogleCalendarAddEventTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">GoogleCalendarAddEventTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.google.com/ </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Google</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=gb_70</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>testqaexam</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>TestPass</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.gb_n.gb_c</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#gb24 &gt; span.gb_c</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Google Календар</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Google Календар</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>Календар</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>Календар</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td>Създаване</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td>Създаване</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.ep-ea.noprint</td>
+	<td>Запазване<br /><br /><br /><br /><br /><br />&nbsp;&nbsp;<br />Отхвърляне</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ep-ea.noprint</td>
+	<td>Запазване<br /><br /><br /><br /><br /><br />&nbsp;&nbsp;<br />Отхвърляне</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=:1t</td>
+	<td>Meeting 8 pm today</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id=':1r.save_top']/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>Календар</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>Календар</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://www.google.com/calendar/render?tab=wc&amp;pli=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[contains(@id, 'tgCol')]/div/div/dl/dd/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id=':1u.delete_top']/div/div/div/div/div[2]</td>
+	<td>Изтриване</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id=':1u.delete_top']/div/div/div/div/div[2]</td>
+	<td>Изтриване</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id=':1u.delete_top']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gb_71</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=signIn</td>
+	<td>Вход</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=signIn</td>
+	<td>Вход</td>
+</tr>
+</tbody></table>
+</body>
+</html>

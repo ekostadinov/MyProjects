@@ -1,0 +1,55 @@
+Why create a new firefox profile for Selenium?
+
+We create firefox profile for Selenium RC tests, so we can set light configurations to it, which later on we’ll be using to run our Selenium scripts FASTER.
+
+How to create Firefox profile for your Selenium?
+
+Make sure all your firefox instance are closed
+Click Start>Run
+Type “firefox.exe -ProfileManager -no-remote”
+Select “Create Profile” (i.e. selenium)
+Click “Next”
+Enter new profile name
+Select a directory folder to store your new profile
+Click “Finish”
+Select “Don’t ask at startup”
+Click “Start Firefox” and configure settings based on suggestion below***
+Set Profile back to “default” (enable you to use your previous settings on your browser)
+Add -firefoxProfileTemplate command line option as you start the Selenium Server
+java -jar selenium-server.jar -firefoxProfileTemplate “<Selenium Profile Directory>”
+
+*** Suggested settings for your Selenium Profile
+
+From “View\Toolbars” tab, uncheck “Bookmarks Toolbar”
+Right click from toolbar and click “Customize”
+Remove “Google search” by dragging it to the “Customize Toolbar” window
+From the “Customize Toolbar” window, click “Use Small Icons” check box then hit “Done”
+Click “Tools\Options” then set the following:
+a. “Main” tab
+- set Home Page to “about:blank”
+- uncheck “Show the Downloads..” option
+b. “Tabs” tab
+- Select “a new window” for new pages
+- Uncheck all warning options
+c. “Content” tab
+- uncheck “Block pop-up” windows option
+d. “Privacy” tab
+- uncheck all “History” options
+e. “Security” tab
+- uncheck all “Security” options
+- click “Settings” and uncheck all warning options
+f. “Advanced” tab
+- Uncheck “autoscrolling” option from “General” tab
+- uncheck “warn me …” and “Ssearch Engines”option from “Update” tab
+From “Tools\Add-ons” install the following:
+- Firebug: allows you to edit, debug, and monitor CSS, HTML, and JavaScript on your application under test
+- Selenium IDE: allows you to record, edit, and debug Selenium tests
+- ScreenGrab: saves entire webpages as images.
+From the address bar type “about:config” and add the following by right-click anywhere on the page and selecting “new”
+- extensions.update.notifyUser (type=boolean; value=false)
+- extensions.newAddons (type=boolean; value=false)
+
+
+
+
+http://girliemangalo.wordpress.com/2009/02/05/creating-firefox-profile-for-your-selenium-rc-tests/

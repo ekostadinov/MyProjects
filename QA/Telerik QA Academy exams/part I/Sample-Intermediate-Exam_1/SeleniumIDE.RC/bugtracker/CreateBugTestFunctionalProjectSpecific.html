@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ifdefined.com/" />
+<title>CreateBugTestFunctionalProjectSpecific</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateBugTestFunctionalProjectSpecific</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://ifdefined.com/btnet/bugs.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - bugs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=add new bug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>BugTracker.NET - Create Bug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=project_label</td>
+	<td>exact:Project:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=project_label</td>
+	<td>exact:Project:</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=project</td>
+	<td>label=HasCustomFieldsProject</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=short_desc</td>
+	<td>Out-of-frame Telerik Rad Rotator contol</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=org</td>
+	<td>label=developers</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=category</td>
+	<td>label=bug</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=priority</td>
+	<td>label=med</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=assigned_to</td>
+	<td>label=admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Samplecustomfield</td>
+	<td>When selected the Rad rotator in vertical position shows the pictures out of frame with wifth 600 and height 150px</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Anothersamplecustomfield</td>
+	<td>label=red</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>Get over it!</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submit_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=bugid_label</td>
+	<td>Bug ID:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=bugid_label</td>
+	<td>Bug ID:</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=project</td>
+	<td>[no project] DemoProject HasCustomFieldsProject HasDifferentPermissionsProject</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_pcd1</td>
+	<td>Project-specific</td>
+</tr>
+</tbody></table>
+</body>
+</html>

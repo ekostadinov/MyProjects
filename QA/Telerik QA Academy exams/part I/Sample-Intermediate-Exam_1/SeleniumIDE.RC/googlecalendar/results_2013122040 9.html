@@ -1,0 +1,848 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>21</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>31</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.37</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">GoogleCorrectUserLogInTest</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">GoogleWorkingCalendarTest</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">GoogleCalendarAddEventTest</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">TC-UniqueHeadingEvent</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">GoogleCorrectUserLogInTest.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">GoogleCorrectUserLogInTest</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.google.com/ </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gb_70</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Email</td>
+	<td>testqaexam</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>TestPass</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=gb_71</td>
+	<td>???·??????</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=gb_71</td>
+	<td>???·??????</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gb_71</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=gb_70</td>
+	<td>????????</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=gb_70</td>
+	<td>????????</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">GoogleWorkingCalendarTest.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">GoogleWorkingCalendarTest</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.google.com/ </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gb_70</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Email</td>
+	<td>testqaexam</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>TestPass</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.gb_n.gb_c</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#gb24 &gt; span.gb_c</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Google ???°?»?µ?????°??</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google ???°?»?µ?????°??</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=gb_71</td>
+	<td>???·??????</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=gb_71</td>
+	<td>???·??????</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gb_71</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForValue</td>
+	<td>id=signIn</td>
+	<td>????????</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyValue</td>
+	<td>id=signIn</td>
+	<td>????????</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">GoogleCalendarAddEventTest.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">GoogleCalendarAddEventTest</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.google.com/ </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gb_70</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Email</td>
+	<td>testqaexam</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>TestPass</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.gb_n.gb_c</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#gb24 &gt; span.gb_c</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Google ???°?»?µ?????°??</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google ???°?»?µ?????°??</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td>?????·???°???°???µ</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td>?????·???°???°???µ</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.ep-ea.noprint</td>
+	<td>???°???°?·???°???µ<br><br><br><br><br><br>&nbsp;&nbsp;<br>?????????????»?????µ</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>css=div.ep-ea.noprint</td>
+	<td>???°???°?·???°???µ<br><br><br><br><br><br>&nbsp;&nbsp;<br>?????????????»?????µ</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=:1t</td>
+	<td>Meeting 8 pm today</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id=':1r.save_top']/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>https://www.google.com/calendar/render?tab=wc&amp;pli=1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//*[contains(@id, 'tgCol')]/div/div/dl/dd/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id=':1u.delete_top']/div/div/div/div/div[2]</td>
+	<td>???·?????????°???µ</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@id=':1u.delete_top']/div/div/div/div/div[2]</td>
+	<td>???·?????????°???µ</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id=':1u.delete_top']/div</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gb_71</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForValue</td>
+	<td>id=signIn</td>
+	<td>????????</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyValue</td>
+	<td>id=signIn</td>
+	<td>????????</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">TC-UniqueHeadingEvent.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">TC-UniqueHeadingEvent</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.google.com/ </td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gb_70</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Email</td>
+	<td>testqaexam</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>TestPass</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.gb_n.gb_c</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#gb24 &gt; span.gb_c</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Google ???°?»?µ?????°??</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTitle</td>
+	<td>Google ???°?»?µ?????°??</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td>?????·???°???°???µ</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td>?????·???°???°???µ</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='sidebar']/div/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.ep-ea.noprint</td>
+	<td>???°???°?·???°???µ<br><br><br><br><br><br>&nbsp;&nbsp;<br>?????????????»?????µ</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>css=div.ep-ea.noprint</td>
+	<td>???°???°?·???°???µ<br><br><br><br><br><br>&nbsp;&nbsp;<br>?????????????»?????µ</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=:1t</td>
+	<td>javascript{makeid()}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id=':1r.save_top']/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>id=mainlogo</td>
+	<td>???°?»?µ?????°??</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>https://www.google.com/calendar/render?tab=wc&amp;pli=1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//*[contains(@id, 'tgCol')]/div/div/dl/dd/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>//div[@id=':1u.delete_top']/div/div/div/div/div[2]</td>
+	<td>???·?????????°???µ</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@id=':1u.delete_top']/div/div/div/div/div[2]</td>
+	<td>???·?????????°???µ</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id=':1u.delete_top']/div</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td>testqaexam@gmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=testqaexam@gmail.com</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gb_71</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/GoogleCorrectUserLogInTest.html
+info: Executing: |open | http://www.google.com/ |  |
+info: Executing: |verifyTitle | Google |  |
+info: Executing: |clickAndWait | id=gb_70 |  |
+info: Executing: |type | id=Email | testqaexam |
+info: Executing: |type | id=Passwd | TestPass |
+info: Executing: |clickAndWait | id=signIn |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |selectWindow | null |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |click | link=testqaexam@gmail.com |  |
+info: Executing: |waitForText | id=gb_71 | ???·?????? |
+info: Executing: |verifyText | id=gb_71 | ???·?????? |
+info: Executing: |clickAndWait | id=gb_71 |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |waitForText | id=gb_70 | ???????? |
+info: Executing: |verifyText | id=gb_70 | ???????? |
+info: Starting test /selenium-server/tests/GoogleWorkingCalendarTest.html
+info: Executing: |open | http://www.google.com/ |  |
+info: Executing: |verifyTitle | Google |  |
+info: Executing: |clickAndWait | id=gb_70 |  |
+info: Executing: |type | id=Email | testqaexam |
+info: Executing: |type | id=Passwd | TestPass |
+info: Executing: |clickAndWait | id=signIn |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | css=a.gb_n.gb_c |  |
+info: Executing: |clickAndWait | css=#gb24 &gt; span.gb_c |  |
+info: Executing: |waitForTitle | Google ???°?»?µ?????°?? |  |
+info: Executing: |verifyTitle | Google ???°?»?µ?????°?? |  |
+info: Executing: |waitForText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |verifyText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |click | link=testqaexam@gmail.com |  |
+info: Executing: |waitForText | id=gb_71 | ???·?????? |
+info: Executing: |verifyText | id=gb_71 | ???·?????? |
+info: Executing: |clickAndWait | id=gb_71 |  |
+info: Executing: |waitForValue | id=signIn | ???????? |
+info: Executing: |verifyValue | id=signIn | ???????? |
+info: Starting test /selenium-server/tests/GoogleCalendarAddEventTest.html
+info: Executing: |open | http://www.google.com/ |  |
+info: Executing: |verifyTitle | Google |  |
+info: Executing: |clickAndWait | id=gb_70 |  |
+info: Executing: |type | id=Email | testqaexam |
+info: Executing: |type | id=Passwd | TestPass |
+info: Executing: |clickAndWait | id=signIn |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | css=a.gb_n.gb_c |  |
+info: Executing: |clickAndWait | css=#gb24 &gt; span.gb_c |  |
+info: Executing: |waitForTitle | Google ???°?»?µ?????°?? |  |
+info: Executing: |verifyTitle | Google ???°?»?µ?????°?? |  |
+info: Executing: |waitForText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |verifyText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |waitForText | //div[@id=&apos;sidebar&apos;]/div/div/div/div/div/div[2] | ?????·???°???°???µ |
+info: Executing: |verifyText | //div[@id=&apos;sidebar&apos;]/div/div/div/div/div/div[2] | ?????·???°???°???µ |
+info: Executing: |click | //div[@id=&apos;sidebar&apos;]/div/div/div/div/div/div[2] |  |
+info: Executing: |waitForText | css=div.ep-ea.noprint | ???°???°?·???°???µ
+
+
+
+
+
+  
+?????????????»?????µ |
+info: Executing: |verifyText | css=div.ep-ea.noprint | ???°???°?·???°???µ
+
+
+
+
+
+  
+?????????????»?????µ |
+info: Executing: |type | id=:1t | Meeting 8 pm today |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | //div[@id=&apos;:1r.save_top&apos;]/div/div/div/div/div[2] |  |
+info: Executing: |waitForText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |verifyText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |open | https://www.google.com/calendar/render?tab=wc&amp;pli=1 |  |
+info: Executing: |click | //*[contains(@id, &apos;tgCol&apos;)]/div/div/dl/dd/span |  |
+info: Executing: |waitForText | //div[@id=&apos;:1u.delete_top&apos;]/div/div/div/div/div[2] | ???·?????????°???µ |
+info: Executing: |verifyText | //div[@id=&apos;:1u.delete_top&apos;]/div/div/div/div/div[2] | ???·?????????°???µ |
+info: Executing: |click | //div[@id=&apos;:1u.delete_top&apos;]/div |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |click | link=testqaexam@gmail.com |  |
+info: Executing: |click | id=gb_71 |  |
+info: Executing: |waitForValue | id=signIn | ???????? |
+info: Executing: |verifyValue | id=signIn | ???????? |
+info: Starting test /selenium-server/tests/TC-UniqueHeadingEvent.html
+info: Executing: |open | http://www.google.com/ |  |
+info: Executing: |verifyTitle | Google |  |
+info: Executing: |clickAndWait | id=gb_70 |  |
+info: Executing: |type | id=Email | testqaexam |
+info: Executing: |type | id=Passwd | TestPass |
+info: Executing: |clickAndWait | id=signIn |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | css=a.gb_n.gb_c |  |
+info: Executing: |clickAndWait | css=#gb24 &gt; span.gb_c |  |
+info: Executing: |waitForTitle | Google ???°?»?µ?????°?? |  |
+info: Executing: |verifyTitle | Google ???°?»?µ?????°?? |  |
+info: Executing: |waitForText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |verifyText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |waitForText | //div[@id=&apos;sidebar&apos;]/div/div/div/div/div/div[2] | ?????·???°???°???µ |
+info: Executing: |verifyText | //div[@id=&apos;sidebar&apos;]/div/div/div/div/div/div[2] | ?????·???°???°???µ |
+info: Executing: |click | //div[@id=&apos;sidebar&apos;]/div/div/div/div/div/div[2] |  |
+info: Executing: |waitForText | css=div.ep-ea.noprint | ???°???°?·???°???µ
+
+
+
+
+
+  
+?????????????»?????µ |
+info: Executing: |verifyText | css=div.ep-ea.noprint | ???°???°?·???°???µ
+
+
+
+
+
+  
+?????????????»?????µ |
+info: Executing: |type | id=:1t | javascript{makeid()} |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | //div[@id=&apos;:1r.save_top&apos;]/div/div/div/div/div[2] |  |
+info: Executing: |waitForText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |verifyText | id=mainlogo | ???°?»?µ?????°?? |
+info: Executing: |open | https://www.google.com/calendar/render?tab=wc&amp;pli=1 |  |
+info: Executing: |click | //*[contains(@id, &apos;tgCol&apos;)]/div/div/dl/dd/span |  |
+info: Executing: |waitForText | //div[@id=&apos;:1u.delete_top&apos;]/div/div/div/div/div[2] | ???·?????????°???µ |
+info: Executing: |verifyText | //div[@id=&apos;:1u.delete_top&apos;]/div/div/div/div/div[2] | ???·?????????°???µ |
+info: Executing: |click | //div[@id=&apos;:1u.delete_top&apos;]/div |  |
+info: Executing: |waitForText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |verifyText | link=testqaexam@gmail.com | testqaexam@gmail.com |
+info: Executing: |click | link=testqaexam@gmail.com |  |
+info: Executing: |click | id=gb_71 |  |
+</pre></body></html>
