@@ -6,7 +6,6 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support;
 using OpenQA.Selenium.Support.UI;
-using System.Text;
 using System.Threading;
 
 namespace QaSampleExam

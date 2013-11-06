@@ -67,6 +67,7 @@
     <Compile Include="TestMagento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestRandomNumber.cs" />
+    <Compile Include="TestGoogleCalendar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
