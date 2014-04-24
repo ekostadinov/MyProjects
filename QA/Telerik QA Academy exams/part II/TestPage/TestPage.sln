@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TestPage", "..\..\..\..\Desktop\SQAexams\SQA2exam\mySolution\Test Studio Stand Alone\TestPage\", "{AE6735E8-9425-4344-90DC-C27BD44BF0CF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/TestPage"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\SQAexams\SQA2exam\mySolution\Test Studio Stand Alone\TestPage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TestPage\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TestPage"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\SQAexams\SQA2exam\mySolution\Test Studio Stand Alone\TestPage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TestPage\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55606"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDemoTestProject", "..\..\..\..\Desktop\SQAexams\SQA2exam\mySolution\Test Studio Stand Alone\WebDemoTestProject\WebDemoTestProject\WebDemoTestProject.csproj", "{015CCD5B-1360-4D18-AED1-781509B8C98B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE6735E8-9425-4344-90DC-C27BD44BF0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6735E8-9425-4344-90DC-C27BD44BF0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6735E8-9425-4344-90DC-C27BD44BF0CF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6735E8-9425-4344-90DC-C27BD44BF0CF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{015CCD5B-1360-4D18-AED1-781509B8C98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015CCD5B-1360-4D18-AED1-781509B8C98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015CCD5B-1360-4D18-AED1-781509B8C98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015CCD5B-1360-4D18-AED1-781509B8C98B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

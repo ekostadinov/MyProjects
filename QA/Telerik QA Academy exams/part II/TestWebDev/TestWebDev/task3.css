@@ -1,0 +1,160 @@
+/*styles*/
+div#wrapper div {
+    border: 1px solid grey;
+    width: 150px;
+}
+
+    div#wrapper div div{
+        border: none;
+    }
+
+        div#wrapper div div a{
+            color: red;
+            text-decoration: none;
+        }
+
+          div#wrapper div div a span{
+              text-transform: uppercase;
+        }  
+        
+          /*div1*/  
+    div#wrapper div:nth-child(1) hgroup:before {
+        content: url('/imgs/install.png');
+        position:relative;
+    }
+
+    div#wrapper div:nth-child(1) h3 {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+
+    div#wrapper div:nth-child(1) h2 {
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    /*div2*/  
+    div#wrapper div:nth-child(2) hgroup:before {
+        content: url('/imgs/tuneUp.png');
+        position:relative;
+    }
+
+    div#wrapper div:nth-child(2) h3 {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 40px;
+    }
+
+    div#wrapper div:nth-child(2) h2 {
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    /*div3*/  
+    div#wrapper div:nth-child(3) hgroup:before {
+        content: url('/imgs/manage.png');
+        position:relative;
+    }
+
+    div#wrapper div:nth-child(3) h3 {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 40px;
+    }
+
+    div#wrapper div:nth-child(3) h2 {
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    /*div4*/  
+    div#wrapper div:nth-child(4) hgroup:before {
+        content: url('/imgs/openSource.png');
+        position:relative;
+    }
+
+    div#wrapper div:nth-child(4) h2 {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+/*div5*/  
+    div#wrapper div:nth-child(5) hgroup:before {
+        content: url('/imgs/twitter.png');
+        position:relative;
+    }
+
+    div#wrapper div:nth-child(5) div.yellowBox {
+        border: 1px solid yellow;
+    }
+
+    div#wrapper div:nth-child(5) h2 {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    /*div6*/  
+    div#wrapper div:nth-child(6) hgroup:before {
+        content: url('/imgs/about.png');
+        position:relative;
+    }
+
+    div#wrapper div:nth-child(6) h2 {
+        position: absolute;
+        margin-top: -35px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+
+
+/*positions*/
+div#wrapper {
+    position: relative;
+}
+
+div#wrapper div {
+    display: inline-block;
+    margin-left: -3.5px;
+    padding: 5px;
+    margin-top: 0px;
+}
+/*
+    div#wrapper div:nth-child(2){
+        position: absolute;
+        margin-left: 300px;
+    }
+
+    div#wrapper div:nth-child(3){
+        position: absolute;
+        margin-left: 450px;
+    }
+
+    div#wrapper div:nth-child(4){
+        position: absolute;
+        margin-left: 600px;
+    }
+
+    div#wrapper div:nth-child(5){
+        position: absolute;
+        margin-left: 750px;
+    }
+
+    div#wrapper div:nth-child(6){
+        position: absolute;
+        margin-left: 900px;
+    }
+
+
+    */

@@ -1,0 +1,148 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>sikuli-test.sikuli\HTMLTestRunner.sikuli</h2> <a href="sikuli-test.sikuli\HTMLTestRunner.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+dir = <span class="str">'C:\\Users\\User\\Desktop\\SQAexams\\libs\\HTMLTestRunner'</span>
+<span class="kw">import</span> datetime
+<span class="kw">import</span> StringIO
+<span class="kw">import</span> time
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> unittest
+<span class="kw">import</span> os
+fp = file(os.path.join(dir, <span class="str">"D:\\testMe.html"</span>), <span class="str">"wb"</span>)
+<span class="kw">import</span> sys
+<span class="kw">import</span> HTMLTestRunner
+reload(HTMLTestRunner)
+<span class="cmt">#add to the class path
+</span>bdLibPath=os.path.abspath(sys.argv[<span class="dig">0</span>]+<span class="str">".."</span>)
+<span class="kw">if</span> <span class="kw">not</span> bdLibPath <span class="kw">in</span> sys.path: sys.path.append(bdLibPath)
+<span class="kw">from</span> Lib_with_functions <span class="kw">import</span> *
+<span class="cmt">#
+</span><span class="cmt">#Declare class
+</span><span class="cmt">#
+</span><span class="kw">class</span> SikuliTest(unittest.TestCase):
+<span class="cmt"># Declarations of variables -global
+</span>   chromeIcon = <img src="1396068026598.png" />
+   imagesBtn = <img src="la06paenm.png" />
+   searchBtn = <img src="1396069270761.png" />
+   foundImg = Pattern(<img src="Knl.png" />).targetOffset(-<span class="dig">78</span>,<span class="dig">16</span>)
+   copyImgUrl = <img src="CcpyimageURL.png" />
+   newTabBtn = <img src="Q.png" />
+<span class="cmt">#Define test cases
+</span>   <span class="kw">def</span> test_telerikImg(self):
+       <span class="skw">find</span>(chromeIcon)
+       <span class="skw">click</span>(chromeIcon)
+       <span class="skw">wait</span>(<span class="dig">4</span>)
+       exists(<img src="Bbnrapm1-1.png" />)
+       exists(imagesBtn)
+       <span class="skw">click</span>(imagesBtn)
+       <span class="skw">wait</span>(<span class="dig">2</span>)
+       <span class="skw">type</span>(<span class="str">'telerikacademy'</span>)
+       <span class="skw">click</span>(searchBtn)
+       <span class="skw">wait</span>(<span class="dig">2</span>)
+       exists(foundImg)
+       <span class="skw">click</span>(foundImg)
+       <span class="skw">rightClick</span>(foundImg)
+       <span class="skw">wait</span>(<span class="dig">2</span>)
+       exists(copyImgUrl)
+       <span class="skw">click</span>(copyImgUrl)
+       exists(newTabBtn)
+       <span class="skw">click</span>(newTabBtn)
+       <span class="skw">wait</span>(<span class="dig">1</span>)
+       exists(<img src="1396069667900.png" />)
+       <span class="skw">type</span>(<span class="str">'http://academy.telerik.com/images/default-album/telerik-academyE49D1716EBCD.jpg?sfvrsn=4'</span>)
+       <span class="skw">type</span>(<span class="str">"\n"</span>)
+       <span class="skw">sleep</span>(<span class="dig">1</span>)
+       <span class="skw">wait</span>(<span class="dig">1</span>)
+       exists(foundImg)
+<span class="cmt">#use to TearDown    
+</span><span class="kw">def</span> testCleanUp(self):
+    <span class="skw">sleep</span>(<span class="dig">1.5</span>)
+    xBrowserBtn = <span class="str">'1396497840920.png'</span>
+    exists(xBrowserBtn)
+    <span class="skw">click</span>(xBrowserBtn)
+<span class="cmt">#
+</span><span class="cmt">#HTMLTestRunner Setup
+</span><span class="cmt">#
+</span><span class="kw">if</span> __name__ == <span class="str">'__main__'</span>:
+    HTMLTestRunner.main()
+<span class="cmt">#Define test suite
+</span>    suite = unittest.TestLoader().loadTestsFromTestCase(SikuliTest)
+    outfile = open(<span class="str">"D:\Report.html"</span>, <span class="str">"w"</span>)
+    runner = HTMLTestRunner.HTMLTestRunner(stream=outfile, title=<span class="str">'Test Report'</span>, description=<span class="str">'This is demo'</span> )
+    runner.run(suite)
+<span class="cmt">#suite.addTests(unittest.TestLoader().loadTestsFromTestCase(MyTest2))
+</span>    runner = HTMLTestRunner.HTMLTestRunner(stream = fp, verbosity=<span class="dig">2</span>, dirTestScreenshots = dir)
+    runner.run(suite)
+    fp.close()
+</pre>
+</body>
+</html>
