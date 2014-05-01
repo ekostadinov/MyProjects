@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="Web-ForumAcadTelerik" Id="fe8fea38-c4da-424d-be78-37be28d9a7e1" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="WebTest1.c7b7ebc4-4316-4815-8334-6e23b5fbca96.rec.webtestresult">
+  <Items>
+    <Comment CommentText="OpenHomePage" />
+    <Request Method="GET" Guid="eedaf414-5f83-41ea-b81c-5ea3ace2909a" Version="1.1" Url="http://forums.academy.telerik.com/" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequestTime, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Maximum Request Time" Description="Verifies that the request finishes within a specified amount of time." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="MaxRequestTime" Value="4000" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+    </Request>
+    <Request Method="GET" Guid="55229de0-1818-4f40-8645-add72e3255f5" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|ef7c9b51-ee78-be3f-33ab-5061800d06d4|,|1398398626662|,||,|Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,||,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|ef7c9b51-ee78-be3f-33ab-5061800d06d4|,|1398398626662|,||,|Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,||,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="386f3be3-e4b6-468c-9642-3e5d76e649dc" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PageVisitCounter_1" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="e29dbeb2-cb59-4999-a577-92be2c2d196a" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gcrs2" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequestTime, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Maximum Request Time" Description="Verifies that the request finishes within a specified amount of time." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="MaxRequestTime" Value="500" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="45b34573-9533-4041-bf4d-15af91f6639b" Version="1.1" Url="https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=f1248a9c6974ade&amp;origin=http%3A%2F%2Fforums.academy.telerik.com" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="40" RecordedValue="40" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c2ac12b9-83bf-4083-a5b0-299e686f9fae" Version="1.1" Url="https://www.facebook.com/connect/ping" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#cb=f2e827078ff272&amp;domain=forums.academy.telerik.com&amp;origin=http%3A%2F%2Fforums.academy.telerik.com%2Ff1248a9c6974ade&amp;relation=parent&amp;error=unknown_user" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="domain" Value="forums.academy.telerik.com" RecordedValue="forums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df2e827078ff272%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1248a9c6974ade%26relation%3Dparent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df2e827078ff272%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1248a9c6974ade%26relation%3Dparent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="response_type" Value="token%2Csigned_request%2Ccode" RecordedValue="token%2Csigned_request%2Ccode" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="dd25ebe0-f447-4169-9c64-080e3c372090" Version="1.1" Url="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=f1248a9c6974ade&amp;origin=http%3A%2F%2Fforums.academy.telerik.com" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="40" RecordedValue="40" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f38d7c36-29b6-487a-a399-b3a4948e0bda" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="9edb714c-dc59-4759-a6ea-faa77006682f" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="50be4f9e-de96-40b2-bf4b-7301fa017e0a" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="2eb2543a-dee7-4f7b-8070-a56048e6b99a" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="0ad8f188-9c0d-41ec-be0b-3fb9c39e0640" Version="1.1" Url="http://c.mscimg.com:0/stub/js/forums.academy.telerik.com" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="ab0ba687-888f-4c01-ba85-dc010a595b25" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="4c96047b-befa-42e1-bda7-0821099f20e7" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="78734143-9050-4f7f-83d9-a4bcbb2f4419" Version="1.1" Url="http://www.facebook.com/plugins/login_button.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam424.domain" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;domain=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="app_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="channel" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df1eb6ce36c3aa02%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1248a9c6974ade%26relation%3Dparent.parent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df1eb6ce36c3aa02%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1248a9c6974ade%26relation%3Dparent.parent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="locale" Value="en_US" RecordedValue="en_US" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="email%2Cuser_about_me%2Cuser_location%2Cuser_website" RecordedValue="email%2Cuser_about_me%2Cuser_location%2Cuser_website" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="size" Value="medium" RecordedValue="medium" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b2bb93dd-a48a-4021-b80a-c1fb9ecee234" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7c91e825-f7b3-47d4-89ff-b3e8a3293aee" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7e9195fc-dc93-48a3-8c13-6165cb48cfb8" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c2bf210d-afe9-405e-9067-076491a79c27" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="997457355|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,||,|234|,|1398398630284|,|SerialTrunc|,|ef7c9b51-ee78-be3f-33ab-5061800d06d4" RecordedValue="997457355|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,||,|234|,|1398398630284|,|SerialTrunc|,|ef7c9b51-ee78-be3f-33ab-5061800d06d4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="21981e45-7a66-4cbc-a4ce-db4f1eabd4cf" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="061a6a09-b1e8-47c6-9319-840ed23899cc" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="71d5028f-4b8f-4055-b05f-0233914b25f7" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3e5b0aa9-c4dc-49a6-9bfd-0b0a9c7e238b" Version="1.1" Url="http://ad.crwdcntrl.net/5/c=3588/pe=y/var=lodemodata" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="0b849bb3-9fc4-471a-a444-78eeee32c594" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="0ee1620e-c937-4229-b94c-b4258e5c267e" Version="1.1" Url="http://topictorch.netseer.com/dsatserving2/servlet/BannerServer" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="iso-8859-1" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="rt" Value="jsonp,bbbrain.relatedTerms.processData" RecordedValue="jsonp,bbbrain.relatedTerms.processData" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="impt" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imps" Value="23" RecordedValue="23" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tlid" Value="22511" RecordedValue="22511" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="url" Value="http%3A%2F%2Fforums.academy.telerik.com%2F" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ref" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ua" Value="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" RecordedValue="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ip" Value="78.90.223.47" RecordedValue="78.90.223.47" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="evid" Value="seh1700DEEE8E944B5D8F7E55F2E0C" RecordedValue="seh1700DEEE8E944B5D8F7E55F2E0C" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="params" Value="segment%3Did49999" RecordedValue="segment%3Did49999" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="favi" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cimg" Value="128" RecordedValue="128" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ed1f50b4-ee30-48a9-8e06-818433fb36b6" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="22" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Comment CommentText="ClickOpenTab" />
+    <Request Method="GET" Guid="55239c55-1d81-4e77-abf1-4179e5fb1615" Version="1.1" Url="http://forums.academy.telerik.com/open-questions" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="7f174f9d-a976-4f54-87ef-b901bd57a1ce" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gics2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+        <Request Method="GET" Guid="21434d95-75cd-4449-972d-bd94a1f78f4e" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|ceb75f37-cbf1-fd87-5443-aad396e36881|,|1398398670448|,||,|Recent%20open%20questions%20-%20Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|ceb75f37-cbf1-fd87-5443-aad396e36881|,|1398398670448|,||,|Recent%20open%20questions%20-%20Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="21b9ff38-7bdf-40d6-b35f-18d5ada5146b" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PageVisitCounter_1" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="19573a06-73ff-4652-a570-20f719484ef1" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gcrs2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequestTime, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Maximum Request Time" Description="Verifies that the request finishes within a specified amount of time." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="MaxRequestTime" Value="3000" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+    </Request>
+    <Request Method="GET" Guid="5c213af5-675d-4c07-809b-7eb4857e1f58" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ea09e996-a84a-4517-9f4a-9e6ad1167583" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="cadbb657-88e1-40ac-afc3-43902eea58d0" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="a26c82ee-d0ae-46b6-b51f-f1e23fef9732" Version="1.1" Url="https://www.facebook.com/connect/ping" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#cb=f3daaad9c829258&amp;domain=forums.academy.telerik.com&amp;origin=http%3A%2F%2Fforums.academy.telerik.com%2Ffc2640f4004aff&amp;relation=parent&amp;error=unknown_user" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="domain" Value="forums.academy.telerik.com" RecordedValue="forums.academy.telerik.com" CorrelationBinding="{{QueryStringParam424.domain}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df3daaad9c829258%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ffc2640f4004aff%26relation%3Dparent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df3daaad9c829258%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ffc2640f4004aff%26relation%3Dparent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="response_type" Value="token%2Csigned_request%2Ccode" RecordedValue="token%2Csigned_request%2Ccode" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1261f049-f590-4324-b1dc-9b22bb25cfe3" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="93c531b9-bb4d-4244-a513-3fc10fc08dda" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="083efca4-250b-466e-bfd4-1767c253d3b9" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="5386603f-2c90-4aa0-afc7-b067e06c002b" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="2c0f8964-6dc0-43aa-84c6-703f4eb7bd6a" Version="1.1" Url="http://c.mscimg.com:0/stub/js/forums.academy.telerik.com" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="72d51aec-63ec-4267-9442-1c78fc27c2dd" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="d0edafdb-6331-4e93-9406-c626b29a348e" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="6452e960-ae70-47d5-9a26-b1a8d7f43a89" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="932706811|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,|234|,|1398398670726|,|SerialTrunc|,|ceb75f37-cbf1-fd87-5443-aad396e36881" RecordedValue="932706811|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|http%3A%2F%2Fforums.academy.telerik.com%2F|,|234|,|1398398670726|,|SerialTrunc|,|ceb75f37-cbf1-fd87-5443-aad396e36881" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2e0d0388-33e1-4663-b7d6-4bb72c9444b4" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="791eebfc-7dee-418f-83ca-c566f7fc9f81" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="5f0d6960-af47-4a81-95e8-1bc3d2be18b5" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="ae62effa-d223-4138-9278-4df046cf3b51" Version="1.1" Url="http://topictorch.netseer.com/dsatserving2/servlet/BannerServer" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="iso-8859-1" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="rt" Value="jsonp,bbbrain.relatedTerms.processData" RecordedValue="jsonp,bbbrain.relatedTerms.processData" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="impt" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imps" Value="23" RecordedValue="23" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tlid" Value="22510" RecordedValue="22510" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="url" Value="http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ref" Value="http%3A%2F%2Fforums.academy.telerik.com%2F" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ua" Value="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" RecordedValue="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ip" Value="78.90.223.47" RecordedValue="78.90.223.47" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="evid" Value="seh1700DEEE8E944B5D8F7E55F2E0C" RecordedValue="seh1700DEEE8E944B5D8F7E55F2E0C" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="params" Value="segment%3Did49999" RecordedValue="segment%3Did49999" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="favi" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cimg" Value="128" RecordedValue="128" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="a8f2b020-50c5-47e1-b8c3-c46db217a046" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="cc" Value="bg" RecordedValue="bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4810ff0d-8c50-4a8a-83b1-d2087e1f02e7" Version="1.1" Url="http://www.facebook.com/plugins/login_button.php" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam841.version" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?version=" />
+            <RuleParameter Name="EndsWith" Value="#" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam860.version" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?version=" />
+            <RuleParameter Name="EndsWith" Value="#" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam896.domain" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;domain=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="app_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="channel" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df356d9b1f1d1b2c%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ffc2640f4004aff%26relation%3Dparent.parent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df356d9b1f1d1b2c%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ffc2640f4004aff%26relation%3Dparent.parent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="locale" Value="en_US" RecordedValue="en_US" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="email%2Cuser_about_me%2Cuser_location%2Cuser_website" RecordedValue="email%2Cuser_about_me%2Cuser_location%2Cuser_website" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="size" Value="medium" RecordedValue="medium" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Comment CommentText="ClickQuestionsTab" />
+    <Request Method="GET" Guid="a19af089-1128-455f-a409-fee2b573f31a" Version="1.1" Url="http://forums.academy.telerik.com/questions" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="5e021238-f133-4295-a56d-75be1f91d51a" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gics2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequestTime, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Maximum Request Time" Description="Verifies that the request finishes within a specified amount of time." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="MaxRequestTime" Value="3000" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+    </Request>
+    <Request Method="GET" Guid="7f22f82e-aba6-46a0-9359-aca0cd73ca74" Version="1.1" Url="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=f11d7371ffa1af9&amp;origin=http%3A%2F%2Fforums.academy.telerik.com" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="40" RecordedValue="40" CorrelationBinding="{{QueryStringParam841.version}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0f8d5b7e-8bbd-4d3d-9bdf-386858c3dd39" Version="1.1" Url="https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=f11d7371ffa1af9&amp;origin=http%3A%2F%2Fforums.academy.telerik.com" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="40" RecordedValue="40" CorrelationBinding="{{QueryStringParam860.version}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8769acd8-6802-4d09-8f45-3aff8586a99f" Version="1.1" Url="https://www.facebook.com/connect/ping" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#cb=ff2cb16cf1c997&amp;domain=forums.academy.telerik.com&amp;origin=http%3A%2F%2Fforums.academy.telerik.com%2Ff11d7371ffa1af9&amp;relation=parent&amp;error=unknown_user" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="domain" Value="forums.academy.telerik.com" RecordedValue="forums.academy.telerik.com" CorrelationBinding="{{QueryStringParam896.domain}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Dff2cb16cf1c997%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff11d7371ffa1af9%26relation%3Dparent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Dff2cb16cf1c997%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff11d7371ffa1af9%26relation%3Dparent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="response_type" Value="token%2Csigned_request%2Ccode" RecordedValue="token%2Csigned_request%2Ccode" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="574b89c7-d031-42f2-a4be-108795a0f850" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|6419210a-120c-adcd-5530-96327765d576|,|1398398691670|,||,|Recent%20questions%20-%20Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|6419210a-120c-adcd-5530-96327765d576|,|1398398691670|,||,|Recent%20questions%20-%20Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4d6d7c97-c62e-4b77-a281-c10c8eeed393" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PageVisitCounter_1" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8e341be5-3d85-4bb1-baec-503c95b6d5be" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gcrs2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ead72c19-2572-4e45-a4d7-d3f225d205af" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="10539c5e-ec35-47e8-94e9-f6ee583ae059" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="80ef62e5-9995-4641-b2fd-69ceba2cdd2e" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="3c149537-cd6f-4dd8-aae2-641a3c76efbb" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="3e26d198-3f4b-4819-86c1-ecdd4caa2ab5" Version="1.1" Url="http://c.mscimg.com:0/stub/js/forums.academy.telerik.com" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="58b2ac18-5a8e-4488-8eed-4f4cd8c4d723" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a7f3eada-e3c7-483f-b491-2615cb524c3a" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="e0a21d3c-c23c-43c2-b1c6-be7cc9a368f7" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b23e307f-4f78-42ff-9039-0a9f8ac75ce1" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="425963144|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|234|,|1398398692250|,|SerialTrunc|,|6419210a-120c-adcd-5530-96327765d576" RecordedValue="425963144|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions|,|234|,|1398398692250|,|SerialTrunc|,|6419210a-120c-adcd-5530-96327765d576" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0753535c-3d6e-4b57-ac8c-709df67014ff" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="cf97a8ee-7655-4ea4-9791-d00613de218a" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="421fa5a9-cca0-4f87-a01d-6843cec3fa6b" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f974ea4f-7765-4d26-8563-d1b0bb5254f0" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8ae1f4f0-1fb2-42c0-baa1-3c86581d9290" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a8fda769-9600-4c08-af80-062524c79171" Version="1.1" Url="http://topictorch.netseer.com/dsatserving2/servlet/BannerServer" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="iso-8859-1" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="rt" Value="jsonp,bbbrain.relatedTerms.processData" RecordedValue="jsonp,bbbrain.relatedTerms.processData" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="impt" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imps" Value="23" RecordedValue="23" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tlid" Value="22511" RecordedValue="22511" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="url" Value="http%3A%2F%2Fforums.academy.telerik.com%2Fquestions" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2Fquestions" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ref" Value="http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2Fopen-questions" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ua" Value="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" RecordedValue="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ip" Value="78.90.223.47" RecordedValue="78.90.223.47" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="evid" Value="seh1700DEEE8E944B5D8F7E55F2E0C" RecordedValue="seh1700DEEE8E944B5D8F7E55F2E0C" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="params" Value="segment%3Did49999" RecordedValue="segment%3Did49999" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="favi" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cimg" Value="128" RecordedValue="128" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f5442926-2069-4fb2-bcba-9639d2dad79f" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="cc" Value="bg" RecordedValue="bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="93cce200-9d82-416c-af4d-c46e0a106126" Version="1.1" Url="http://www.facebook.com/plugins/login_button.php" ThinkTime="15" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1992.domain" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;domain=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="app_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="channel" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df1a51d6bed424ba%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff11d7371ffa1af9%26relation%3Dparent.parent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df1a51d6bed424ba%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff11d7371ffa1af9%26relation%3Dparent.parent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="locale" Value="en_US" RecordedValue="en_US" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="email%2Cuser_about_me%2Cuser_location%2Cuser_website" RecordedValue="email%2Cuser_about_me%2Cuser_location%2Cuser_website" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="size" Value="medium" RecordedValue="medium" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Comment CommentText="ClickTagsTab" />
+    <Request Method="GET" Guid="f8ed80de-4659-459c-9e3b-c147c700d06d" Version="1.1" Url="http://forums.academy.telerik.com/tags" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="851c7658-2ffa-45fc-b5f8-f75a4ab55673" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gics2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+        <Request Method="GET" Guid="cf1d624e-8b6d-4891-827e-0574e3ac5b77" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|343ad3a3-c060-a754-5467-b8f256cab884|,|1398398719489|,||,|Most%20popular%20tags%20-%20Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2Ftags|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|343ad3a3-c060-a754-5467-b8f256cab884|,|1398398719489|,||,|Most%20popular%20tags%20-%20Telerik%20Academy%20Forums|,|http%3A%2F%2Fforums.academy.telerik.com%2Ftags|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|1397185399688|,|1397185399716|,|234|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="6b10f3ef-be21-48f3-9b11-ec7fa6a4030d" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PageVisitCounter_1" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="9cc364d9-ae02-4426-aa9f-d401eebe3f92" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gcrs2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequestTime, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Maximum Request Time" Description="Verifies that the request finishes within a specified amount of time." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="MaxRequestTime" Value="3000" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+    </Request>
+    <Request Method="GET" Guid="4daf6276-9379-4ae0-8792-e0e11ee1bbf1" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0fa31fcb-a461-44cd-a37e-156b75a87020" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="086fcf95-d682-466c-8d5b-11b2126f7357" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b656ffd6-6456-4cde-86cc-d4fe4877f73e" Version="1.1" Url="https://www.facebook.com/connect/ping" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#cb=f129de8d464010a&amp;domain=forums.academy.telerik.com&amp;origin=http%3A%2F%2Fforums.academy.telerik.com%2Ff1772efa2fea099&amp;relation=parent&amp;error=unknown_user" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="client_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="domain" Value="forums.academy.telerik.com" RecordedValue="forums.academy.telerik.com" CorrelationBinding="{{QueryStringParam1992.domain}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="origin" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="redirect_uri" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df129de8d464010a%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1772efa2fea099%26relation%3Dparent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df129de8d464010a%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1772efa2fea099%26relation%3Dparent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="response_type" Value="token%2Csigned_request%2Ccode" RecordedValue="token%2Csigned_request%2Ccode" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="768d8deb-02ed-46cc-8605-4fb699607111" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="cb2a8169-238a-4e7b-b5f3-c34e3d213eac" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="ba9655ef-d609-4882-acee-c0c8b23eed43" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="c2cb3e76-1134-4195-826c-d0ebf2309b09" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a0eef99a-ebb7-4a21-b557-8b465024a3f3" Version="1.1" Url="http://c.mscimg.com:0/stub/js/forums.academy.telerik.com" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="8c382a29-94d9-4ce8-acd3-bf3a9951f83a" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="89e4c0cd-e699-45ae-ac77-0b685af98107" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="b373163b-a9e9-43c4-9e18-b5f6874d465f" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="179601457|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2Ftags|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|234|,|1398398719774|,|SerialTrunc|,|343ad3a3-c060-a754-5467-b8f256cab884" RecordedValue="179601457|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Fforums.academy.telerik.com%2Ftags|,|http%3A%2F%2Fforums.academy.telerik.com%2Fquestions|,|234|,|1398398719774|,|SerialTrunc|,|343ad3a3-c060-a754-5467-b8f256cab884" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1cc405a0-eb38-4ee2-a7a9-38131a8602d2" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3f7ba050-5227-49e0-9cd9-3fa7f22f6eed" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Fforums.academy.telerik.com" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="56ee3fcb-27d7-4490-bd19-64240569c47c" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="33c49c99-27b2-4be4-88c1-6f626785c0cd" Version="1.1" Url="http://topictorch.netseer.com/dsatserving2/servlet/BannerServer" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="iso-8859-1" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="rt" Value="jsonp,bbbrain.relatedTerms.processData" RecordedValue="jsonp,bbbrain.relatedTerms.processData" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="impt" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="imps" Value="23" RecordedValue="23" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tlid" Value="22511" RecordedValue="22511" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="url" Value="http%3A%2F%2Fforums.academy.telerik.com%2Ftags" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2Ftags" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ref" Value="http%3A%2F%2Fforums.academy.telerik.com%2Fquestions" RecordedValue="http%3A%2F%2Fforums.academy.telerik.com%2Fquestions" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ua" Value="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" RecordedValue="Mozilla/4.0%20%28compatible%3B%20MSIE%208.0%3B%20Windows%20NT%206.1%3B%20WOW64%3B%20Trident/4.0%3B%20GTB7.5%3B%20SLCC2%3B%20.NET%20CLR%202.0.50727%3B%20.NET%20CLR%203.5.30729%3B%20.NET%20CLR%203.0.30729%3B%20Media%20Center%20PC%206.0%3B%20.NET4.0C%3B%20.NET4.0E%3B%20InfoPath.3%29" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ip" Value="78.90.223.47" RecordedValue="78.90.223.47" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="evid" Value="seh1700DEEE8E944B5D8F7E55F2E0C" RecordedValue="seh1700DEEE8E944B5D8F7E55F2E0C" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="params" Value="segment%3Did49999" RecordedValue="segment%3Did49999" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="favi" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cimg" Value="128" RecordedValue="128" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f3324838-50f6-4894-8e55-70633d08a22e" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="5fc76968-0fa7-4925-a039-7bc17bee610b" Version="1.1" Url="http://www.facebook.com/plugins/login_button.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="app_id" Value="100822506753217" RecordedValue="100822506753217" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="channel" Value="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df41a029d28bff%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1772efa2fea099%26relation%3Dparent.parent" RecordedValue="http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D40%23cb%3Df41a029d28bff%26domain%3Dforums.academy.telerik.com%26origin%3Dhttp%253A%252F%252Fforums.academy.telerik.com%252Ff1772efa2fea099%26relation%3Dparent.parent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="locale" Value="en_US" RecordedValue="en_US" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scope" Value="email%2Cuser_about_me%2Cuser_location%2Cuser_website" RecordedValue="email%2Cuser_about_me%2Cuser_location%2Cuser_website" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sdk" Value="joey" RecordedValue="joey" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="size" Value="medium" RecordedValue="medium" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
