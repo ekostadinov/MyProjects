@@ -1,0 +1,164 @@
+Operation stopped...
+
+- Initializing Data Flow Task (Success)
+
+- Initializing Connections (Success)
+
+- Setting SQL Command (Success)
+
+- Setting Source Connection (Success)
+
+- Setting Destination Connection (Success)
+
+- Validating (Error)
+	Messages
+	* Error 0xc0202049: Data Flow Task 4: Failure inserting into the read-only column "ReportId".
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0202045: Data Flow Task 4: Column metadata validation failed.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc004706b: Data Flow Task 4: "Destination 16 - LoadTestReport" failed validation and returned validation status "VS_ISBROKEN".
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc004700c: Data Flow Task 4: One or more component failed validation.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0024107: Data Flow Task 4: There were errors during task validation.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Prepare for Execute (Stopped)
+
+- Pre-execute (Stopped)
+
+- Executing (Success)
+
+- Copying to [dbo].[LoadTestBrowsers] (Stopped)
+
+- Copying to [dbo].[LoadTestCase] (Stopped)
+
+- Copying to [dbo].[LoadTestDataCollectorLog] (Stopped)
+
+- Copying to [dbo].[LoadTestDetailMessage] (Stopped)
+
+- Copying to [dbo].[LoadTestFileAttachment] (Stopped)
+
+- Copying to [dbo].[LoadTestFileAttachmentChunk] (Stopped)
+
+- Copying to [dbo].[LoadTestMessage] (Stopped)
+
+- Copying to [dbo].[LoadTestMessageType] (Stopped)
+
+- Copying to [dbo].[LoadTestNetworks] (Stopped)
+
+- Copying to [dbo].[LoadTestPageDetail] (Stopped)
+
+- Copying to [dbo].[LoadTestPageSummaryByNetwork] (Stopped)
+
+- Copying to [dbo].[LoadTestPageSummaryData] (Stopped)
+
+- Copying to [dbo].[LoadTestPerformanceCounter] (Stopped)
+
+- Copying to [dbo].[LoadTestPerformanceCounterCategory] (Stopped)
+
+- Copying to [dbo].[LoadTestPerformanceCounterInstance] (Stopped)
+
+- Copying to [dbo].[LoadTestPerformanceCounterSample] (Stopped)
+
+- Copying to [dbo].[LoadTestReport] (Stopped)
+
+- Copying to [dbo].[LoadTestReportPage] (Stopped)
+
+- Copying to [dbo].[LoadTestReportRuns] (Stopped)
+
+- Copying to [dbo].[LoadTestRun] (Stopped)
+
+- Copying to [dbo].[LoadTestRunAgent] (Stopped)
+
+- Copying to [dbo].[LoadTestRunInterval] (Stopped)
+
+- Copying to [dbo].[LoadTestScenario] (Stopped)
+
+- Copying to [dbo].[LoadTestSchemaRevision] (Stopped)
+
+- Copying to [dbo].[LoadTestSqlTrace] (Stopped)
+
+- Copying to [dbo].[LoadTestSystemUnderTest] (Stopped)
+
+- Copying to [dbo].[LoadTestSystemUnderTestTag] (Stopped)
+
+- Copying to [dbo].[LoadTestTestDetail] (Stopped)
+
+- Copying to [dbo].[LoadTestTestLog] (Stopped)
+
+- Copying to [dbo].[LoadTestTestSummaryData] (Stopped)
+
+- Copying to [dbo].[LoadTestThresholdMessage] (Stopped)
+
+- Copying to [dbo].[LoadTestTransactionDetail] (Stopped)
+
+- Copying to [dbo].[LoadTestTransactionSummaryData] (Stopped)
+
+- Copying to [dbo].[Query] (Stopped)
+
+- Copying to [dbo].[Sheet1$] (Stopped)
+
+- Copying to [dbo].[Sheet2$] (Stopped)
+
+- Copying to [dbo].[Sheet3$] (Stopped)
+
+- Copying to [dbo].[WebLoadTestErrorDetail] (Stopped)
+
+- Copying to [dbo].[WebLoadTestRequestMap] (Stopped)
+
+- Copying to [dbo].[WebLoadTestTransaction] (Stopped)
+
+- Copying to [dbo].[LoadTestComputedCounterSample] (Stopped)
+
+- Copying to [dbo].[LoadTestComputedCounterSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestMessageSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestMessageView] (Stopped)
+
+- Copying to [dbo].[LoadTestMessageView2] (Stopped)
+
+- Copying to [dbo].[LoadTestPageResults] (Stopped)
+
+- Copying to [dbo].[LoadTestPageResultsByNetwork] (Stopped)
+
+- Copying to [dbo].[LoadTestPageResultsByNetwork2] (Stopped)
+
+- Copying to [dbo].[LoadTestPageSample] (Stopped)
+
+- Copying to [dbo].[LoadTestPageSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestRequestSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestScenarioSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestTestCaseSample] (Stopped)
+
+- Copying to [dbo].[LoadTestTestCaseSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestTestResults] (Stopped)
+
+- Copying to [dbo].[LoadTestTransactionResults] (Stopped)
+
+- Copying to [dbo].[LoadTestTransactionResults2] (Stopped)
+
+- Copying to [dbo].[LoadTestTransactionSample] (Stopped)
+
+- Copying to [dbo].[LoadTestTransactionSummary] (Stopped)
+
+- Copying to [dbo].[LoadTestWebPageAndUserLoadCounterSample] (Stopped)
+
+- Copying to [dbo].[LoadTestWebRequestCounterSample] (Stopped)
+
+- Copying to [dbo].[LoadTestWebRequestCounterSummary] (Stopped)
+
+- Post-execute (Stopped)
+
+
+
