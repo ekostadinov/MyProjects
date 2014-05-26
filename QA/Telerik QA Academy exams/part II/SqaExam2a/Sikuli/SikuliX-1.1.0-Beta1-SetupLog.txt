@@ -1,0 +1,121 @@
+[debug (14-5-26 6:16:32)] Debug: setLogFile: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\SikuliX-1.1.0-Beta1-SetupLog.txt
+[debug (14-5-26 6:16:32)] RunSetup: Setup in: C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part II/SqaExam2a/Sikuli/ using: sikulixsetup-1.1.jar
+[debug (14-5-26 6:16:32)] RunSetup: SikuliX Setup Build: 1.1.0-Beta1 2014-05-16-18
+[debug (14-5-26 6:16:38)] RunSetup: RunningSystem: Windows 6.1
+[debug (14-5-26 6:16:38)] RunSetup: parent of jar/classes: C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part II/SqaExam2a/Sikuli/
+[debug (14-5-26 6:16:38)] RunSetup: RunningJava: Java 7 (x86) 1.7.0_55-b13
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="USER_TYPE" value="0"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="IDE_SESSION" value="C:/Users/User/Desktop/SQAexams/SQA2exam/mySolution/Sikuli/ImagesTask.sikuli/"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="CAPTURE_HOTKEY" value="50"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="CAPTURE_HOTKEY_MODIFIERS" value="3"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="CAPTURE_DELAY" value="1.0"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="STOP_HOTKEY" value="67"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="STOP_HOTKEY_MODIFIERS" value="9"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="EXPAND_TAB" value="true"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="TAB_WIDTH" value="4"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="FONT_SIZE" value="14"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="FONT_NAME" value="Monospaced"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="LOCALE" value="en_US"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="AUTO_NAMING" value="0"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="DEFAULT_THUMB_HEIGHT" value="50"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_COMMAND_BAR" value="1"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="AUTO_CAPTURE_FOR_CMD_BUTTONS" value="1"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="AT_SAVE_MAKE_HTML" value="true"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="AT_SAVE_CLEAN_BUNDLE" value="true"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_RUN_SAVE" value="false"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_HIGHLIGHT" value="false"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="CHECK_UPDATE" value="false"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="LAST_SEEN_UPDATE" value="0.0.0"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="LAST_CHECK_UPDATE" value="1396411115902"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="IDE_SIZE" value="1382x744"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="IDE_LOCATION" value="-8,-8"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_IMAGES" value="false"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_IMAGES_PATH" value=""/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_MESSAGE" value="0"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_LOG_ACTIONS" value="true"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_LOG_INFO" value="true"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="CONSOLE_CSS" value="body   { font-family:serif; font-size: 12px; }.normal{ color: black; }.debug { color:#505000; }.info  { color: blue; }.log   { color: #09806A; }.error { color: red; }"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_TEXT_SEARCH" value="false"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="PREF_MORE_TEXT_OCR" value="false"/>
+[debug (14-5-26 6:17:13)] RunSetup: Prefs: <entry key="LAST_OPEN_DIR" value="C:\Users\User\Desktop\SQAexams\SQA2exam\15-July-2013\Solutions\Sikili\Test"/>
+[debug (14-5-26 6:17:25)] FileManager: Downloading 1.1.0-Beta1-1.jar having 6512 KB
+[debug (14-5-26 6:17:59)] FileManager: downloaded 6512 KB to C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\Downloads\1.1.0-Beta1-1.jar
+[debug (14-5-26 6:17:59)] FileManager: download time: 33
+[debug (14-5-26 6:18:03)] RunSetup: main: Copied from Downloads: 1.1.0-Beta1-1.jar
+[debug (14-5-26 6:18:03)] FileManager: Downloading 1.1.0-Beta1-4.jar having 15296 KB
+[debug (14-5-26 6:19:25)] FileManager: downloaded 15296 KB to C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\Downloads\1.1.0-Beta1-4.jar
+[debug (14-5-26 6:19:25)] FileManager: download time: 80
+[debug (14-5-26 6:19:29)] RunSetup: main: Copied from Downloads: 1.1.0-Beta1-4.jar
+[debug (14-5-26 6:19:29)] RunSetup: Download ended
+[debug (14-5-26 6:19:29)] RunSetup: Downloads for selected options:
+1.1.0-Beta1-1.jar - 1.1.0-Beta1-4.jar - 
+[debug (14-5-26 6:19:29)] RunSetup: Download page: https://launchpad.net/raiman/sikulix2013+/1.1.0
+[debug (14-5-26 6:19:29)] RunSetup: recreating IDE (exclude scripting support)
+[debug (14-5-26 6:19:29)] FileManager: buildJar: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikuli-temp.jar
+[debug (14-5-26 6:19:29)] FileManager: buildJar: adding: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikulix.jar
+[debug (14-5-26 6:19:34)] FileManager: buildJar: completed
+[debug (14-5-26 6:19:34)] RunSetup: adding needed stuff to sikulix.jar
+[debug (14-5-26 6:19:34)] FileManager: buildJar: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikuli-temp.jar
+[debug (14-5-26 6:19:34)] FileManager: buildJar: adding: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikulix.jar
+[debug (14-5-26 6:19:37)] FileManager: buildJar: adding: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikulixsetup-1.1.jar
+[debug (14-5-26 6:19:42)] FileManager: buildJar: adding: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikulijython.jar
+[debug (14-5-26 6:19:55)] FileManager: buildJar: completed
+[debug (14-5-26 6:19:55)] RunSetup: exporting commandfiles
+[debug (14-5-26 6:19:55)] ResourceLoader: export: Trying to access package for exporting: Commands/windows#runsikulix.cmd
+to: C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part II/SqaExam2a/Sikuli/
+[debug (14-5-26 6:19:55)] ResourceLoader: export: from: file:/C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik%20QA%20Academy%20exams/part%20II/SqaExam2a/Sikuli/sikulixsetup-1.1.jar
+[debug (14-5-26 6:19:56)] ResourceLoader: export: Found 1 Files in Commands/windows/runsikulix.cmd
+[debug (14-5-26 6:19:58)] RunSetup: trying to set up the environment
+[debug (14-5-26 6:19:58)] ResourceLoader: check: we are running on arch: x86
+[debug (14-5-26 6:19:58)] ResourceLoader: check: using Java at: C:/Program Files (x86)/Java/jre7/
+[error (14-5-26 6:19:58)] ResourceLoader: check: No valid libs path available until now!
+[action (14-5-26 6:19:58)] ResourceLoader: check: Please wait! Trying to extract libs to jar parent folder: C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part II/SqaExam2a/Sikuli/
+[debug (14-5-26 6:19:58)] ResourceLoader: extractLibs: from: file:/C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik%20QA%20Academy%20exams/part%20II/SqaExam2a/Sikuli/sikulixsetup-1.1.jar
+[debug (14-5-26 6:19:59)] ResourceLoader: extractLibs: Found 20 Files in META-INF/libs/windows/libs32/
+[debug (14-5-26 6:20:02)] ResourceLoader: checkLibsDir: trying: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\libs
+[debug (14-5-26 6:20:02)] ResourceLoader: checkLibsDir: Running on Windows - checking system path!
+[debug (14-5-26 6:20:03)] ResourceLoader: checkLibsDir: Added libs dir to path: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\libs
+[debug (14-5-26 6:20:03)] ResourceLoader: checkLibsDir: ... rik QA Academy exams\part II\SqaExam2a\Sikuli\libs
+[error (14-5-26 6:20:03)] ResourceLoader: loadLib: Fatal Error 110: loading: WinUtil.dll
+[error (14-5-26 6:20:03)] ResourceLoader: loadLib: Since native library was found, it might be a problem with needed dependent libraries
+C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\libs\WinUtil.dll: The specified procedure could not be found
+[error (14-5-26 6:20:03)] ResourceLoader: loadLib: Check, wether a valid Sikuli libs folder is in system path at runtime!
+[error (14-5-26 6:20:03)] ResourceLoader: loadLib: Running Setup: ignoring this error for now
+[debug (14-5-26 6:20:03)] ResourceLoader: checkLibsDir: Using libs at: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\libs
+[debug (14-5-26 6:20:03)] ResourceLoader: check: recreated ClassLoader.usrPaths
+[debug (14-5-26 6:20:06)] RunSetup: Trying to run functional test: running script statements via SikuliScript
+[debug (14-5-26 6:20:06)] SikuliX: add to classpath: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikulix.jar
+[debug (14-5-26 6:20:06)] RunSetup: trying to run a test using SikuliScript with Jython
+[debug (14-5-26 6:20:14)] JythonScriptRunner: init: python.path hack: 
+C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\sikulixsetup-1.1.jar\Lib
+[debug (14-5-26 6:20:20)] Jython: sikuli: __init__: entering
+[debug (14-5-26 6:20:21)] Jython: sikuli: Sikuli: entering
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: constants
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import Region
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import Screen
+[debug (14-5-26 6:20:24)] Screen: initScreens: basic initialization (1 Screen(s) found)
+[debug (14-5-26 6:20:24)] Screen: *** monitor configuration (primary: 0) ***
+[debug (14-5-26 6:20:24)] Screen: 0: S(0)[0,0 1366x768]
+[debug (14-5-26 6:20:24)] Screen: *** end monitor configuration ***
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: Env.addHotkey
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import Match
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import Pattern
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import Location
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import ScreenUnion
+[debug (14-5-26 6:20:24)] Jython: sikuli: Sikuli: import Finder
+[debug (14-5-26 6:20:25)] ResourceLoader: loadLib: Now loaded: VisionProxy from: C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SqaExam2a\Sikuli\libs\VisionProxy.dll
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import Image
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import ImagePath
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import App
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import KeyBoard/Mouse
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import from Basics
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import from compare
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: init SikuliImporter
+[debug (14-5-26 6:20:25)] Jython: sikuli: Sikuli: import SikuliX
+[debug (14-5-26 6:20:25)] Jython: requested to use as default region: R[0,0 1366x768]@S(0)
+[error (14-5-26 6:20:25)] ImagePath: setBundlePath: Settings not changed: invalid BundlePath: null
+[debug (14-5-26 6:20:25)] Running Jython: 2.7b1 (default:ac42d59644e9, Feb 9 2013, 15:24:52) 
+[debug (14-5-26 6:20:25)] Jython: requested to use as default region: R[0,0 1366x768]@S(0)
+[debug (14-5-26 6:20:25)] Sikuli-Script startup: 11733
+[debug (14-5-26 6:20:25)] JythonScriptRunner: runPython: running statements
+[debug (14-5-26 6:20:49)] RunSetup: ... SikuliX Setup seems to have ended successfully ;-)

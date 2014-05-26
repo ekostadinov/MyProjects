@@ -7,14 +7,13 @@ class Lines
     static char[, ,] cuboid;
 
     static int lineMaxLen = 0;
-    static int linesCount = 0;
+    static int linesCount;
     static bool[, , , , ,] processed;
 
     static void Main()
     {
         // Read the cuboid size
         ReadCuboid();
-        
 
         // Find the longest line in the cuboid
         FindLongestLine();
@@ -33,7 +32,7 @@ class Lines
 
     private static void ReadCuboid()
     {
-        using (StreamReader reader = new StreamReader(@"C:\Users\User\Desktop\SQAexams\exam_tasks\mySOLUTION\input.txt"))
+        using (StreamReader reader = new StreamReader(@"C:\Users\User\Documents\GitHub\MyProjects\QA\Telerik QA Academy exams\part II\SQAexams2\exam_tasks\mySOLUTION\input.txt"))
 		{
 			// Read the cuboid size
 			string cuboidSize = reader.ReadLine();
@@ -109,18 +108,18 @@ class Lines
         int len = 0;
 
         // Find the end of the line
-        //while (IsInsideTheCuboid(w + stepW, h + stepH, d + stepD) &&
-        //    cuboid[w + stepW, h + stepH, d + stepD] == color)
-        //{
-        //    w += stepW;
-        //    h += stepH;
-        //    d += stepD;
-        //}
+        while (IsInsideTheCuboid(w + stepW, h + stepH, d + stepD) &&
+            cuboid[w + stepW, h + stepH, d + stepD] == color)
+        {
+            w += stepW;
+            h += stepH;
+            d += stepD;
+        }
 
         // Scan the line back from the end to the start
         while (IsInsideTheCuboid(w, h, d) && cuboid[w, h, d] == color)
         {
-            //MarkAsProcessed(w, h, d, stepW, stepH, stepD);
+            MarkAsProcessed(w, h, d, stepW, stepH, stepD);
             len++;
             if (len == lineMaxLen)
             {
@@ -131,7 +130,6 @@ class Lines
                 lineMaxLen = len;
                 linesCount = 1;
             }
-
             w -= stepW;
             h -= stepH;
             d -= stepD;
@@ -140,15 +138,15 @@ class Lines
 
 	private static bool IsInsideTheCuboid(int w, int h, int d)
 	{
-		for (double wPos = 0; wPos < width; wPos++)
+		for (double wPos = 0; wPos < width; wPos += 0.25d)
 		{
 			if (wPos == w)
 			{
-				for (double hPos = 0; hPos < height; hPos++)
+				for (double hPos = 0; hPos < height; hPos += 0.25d)
 				{
 					if (wPos == w && hPos == h)
 					{
-						for (double dPos = 0; dPos < depth; dPos++)
+						for (double dPos = 0; dPos < depth; dPos += 0.25d)
 						{
 							if (wPos == w && hPos == h && dPos == d)
 							{
@@ -165,18 +163,20 @@ class Lines
 	
 	private static bool IsProcessed(
         int w, int h, int d, int stepW, int stepH, int stepD)
-	{
-	    bool isProcessed =
-	        processed[w, h, d, stepW + 1, stepH + 1, stepD + 1];
-            //||
-            //processed[w, h, d, -stepW + 1, -stepH + 1, -stepD + 1];
+    {
+        bool isProcessed =
+            processed[w, h, d, stepW + 1, stepH + 1, stepD + 1] ||
+            processed[w, h, d, -stepW + 1, -stepH + 1, -stepD + 1];
         return isProcessed;
     }
 
     private static void MarkAsProcessed(
         int w, int h, int d, int stepW, int stepH, int stepD)
     {
-        //processed[w, h, d, stepW + 1, stepH + 1, stepD + 1] = true;
+        processed[w, h, d, stepW + 1, stepH + 1, stepD + 1] = true;
         processed[w, h, d, -stepW + 1, -stepH + 1, -stepD + 1] = true;
     }
 }
+
+
+

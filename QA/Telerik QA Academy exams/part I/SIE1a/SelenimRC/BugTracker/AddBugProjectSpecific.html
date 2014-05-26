@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:49446/" />
+<title>AddBugProjectSpecific</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AddBugProjectSpecific</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://ifdefined.com/btnet/bugs.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BugTracker.NET - bugs</td>
+	<td></td>
+</tr>
+<!--add new bug-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'add new bug')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'add new bug')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[@id='row1']/td/span</td>
+	<td>exact:Project:</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>//span[@id='label_pcd1']</td>
+	<td>Project-specific</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id='project']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='project']</td>
+	<td>label=HasCustomFieldsProject</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//option[@value='3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[@id='label_pcd1']</td>
+	<td>Project-specific</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id='pcd1']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
