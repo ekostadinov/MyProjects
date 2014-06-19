@@ -1,0 +1,426 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>failed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>18</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.41</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td><TABLE id=suiteTable class=selenium border=1 cellSpacing=1 cellPadding=1>
+<TBODY>
+<TR class="title   status_failed">
+<TD><B>Test Suite</B></TD></TR>
+<TR class="  status_failed">
+<TD><A href="#testresult0">GoogleLoginTest</A></TD></TR>
+<TR class="  status_failed">
+<TD><A href="#testresult1">AddEventTest</A></TD></TR>
+<TR class="  status_failed">
+<TD><A href="#testresult2">AddEventUniqueTimeTest</A></TD></TR></TBODY></TABLE></td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">GoogleLoginTest.html</a><br/><DIV>
+<TABLE border=1 cellSpacing=1 cellPadding=1>
+<THEAD>
+<TR class="title status_failed">
+<TD colSpan=3>GoogleLoginTest</TD></TR></THEAD>
+<TBODY>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>open</TD>
+<TD>http://www.google.com/</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>waitForPageToLoad</TD>
+<TD>3000</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_passed">
+<TD>assertTitle</TD>
+<TD>Google</TD>
+<TD originalHTML></TD></TR><!--login btn-->
+<TR style="CURSOR: pointer" class="  status_failed">
+<TD>assertElementPresent</TD>
+<TD>//div[3]/div/a</TD>
+<TD originalHTML>false</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>clickAndWait</TD>
+<TD>//div[3]/div/a</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>waitForPageToLoad</TD>
+<TD>3000</TD>
+<TD originalHTML></TD></TR><!--login page--><!--Sign in - Google Accounts-->
+<TR style="CURSOR: pointer">
+<TD>assertTitle</TD>
+<TD>&#1042;&#1093;&#1086;&#1076; ? Google &#1055;&#1088;&#1086;&#1092;&#1080;&#1083;&#1080;</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//input[@id='Email']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//input[@id='Email']</TD>
+<TD originalHTML="testqaexam">testqaexam</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//input[@id='Passwd']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//input[@id='Passwd']</TD>
+<TD originalHTML="TestPass">TestPass</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//input[@id='signIn']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>clickAndWait</TD>
+<TD>//input[@id='signIn']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>waitForPageToLoad</TD>
+<TD>3000</TD>
+<TD originalHTML></TD></TR><!--account page-->
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='gb']/div/div/div[2]/div[5]/div/a/span</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id='gb']/div/div/div[2]/div[5]/div/a/span</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>waitForText</TD>
+<TD>//div[@id='gb']/div/div/div[2]/div[5]/div[2]/div/div/div[2]</TD>
+<TD originalHTML="testqaexam@gmail.com">testqaexam@gmail.com</TD></TR></TBODY></TABLE></DIV></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">AddEventTest.html</a><br/><DIV>
+<TABLE border=1 cellSpacing=1 cellPadding=1>
+<THEAD>
+<TR class="title status_failed">
+<TD colSpan=3>AddEventTest</TD></TR></THEAD>
+<TBODY>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>selectWindow</TD>
+<TD>Google</TD>
+<TD originalHTML></TD></TR><!--options img btn-->
+<TR style="CURSOR: pointer" class="  status_passed">
+<TD>assertElementPresent</TD>
+<TD>//a[@href='http://www.google.bg/intl/bg/options/']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>click</TD>
+<TD>//a[@href='http://www.google.bg/intl/bg/options/']</TD>
+<TD originalHTML></TD></TR><!--calendar img btn-->
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>waitForElementPresent</TD>
+<TD>//li[7]/a/span</TD>
+<TD originalHTML="2000">2000</TD></TR>
+<TR style="CURSOR: pointer" class="  status_passed">
+<TD>assertElementPresent</TD>
+<TD>//li[7]/a/span</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>clickAndWait</TD>
+<TD>//li[7]/a/span</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>waitForPageToLoad</TD>
+<TD>3000</TD>
+<TD originalHTML></TD></TR><!--calendar page-->
+<TR style="CURSOR: pointer" class="  status_failed">
+<TD>assertTitle</TD>
+<TD>Google &#1050;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;</TD>
+<TD originalHTML>Actual&nbsp;value&nbsp;'&#1047;&#1072;&#1087;&#1086;&#1079;&#1085;&#1072;&#1081;&#1090;&#1077;&nbsp;&#1089;&#1077;&nbsp;&#1089;&nbsp;Google&nbsp;&#1044;&#1080;&#1089;&#1082;&nbsp;?&nbsp;&#1074;&#1089;&#1080;&#1095;&#1082;&#1080;&#1090;&#1077;&nbsp;&#1074;&#1080;&nbsp;&#1092;&#1072;&#1081;&#1083;&#1086;&#1074;&#1077;&nbsp;&#1085;&#1072;&nbsp;&#1077;&#1076;&#1085;&#1086;&nbsp;&#1084;&#1103;&#1089;&#1090;&#1086;'&nbsp;did&nbsp;not&nbsp;match&nbsp;'Google&nbsp;&#1050;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;'</TD></TR><!--new event img btn-->
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='sidebar']/div/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id='sidebar']/div/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>waitForElementPresent</TD>
+<TD>//div[@id='coverinner']/div/div[2]/input</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='coverinner']/div/div[2]/input</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//div[@id='coverinner']/div/div[2]/input</TD>
+<TD originalHTML="Meeting 8 pm today">Meeting 8 pm today</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//input[@id=':1u-st']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//input[@id=':1u-st']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//input[@id=':1u-st']</TD>
+<TD originalHTML="20:00">20:00</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id=':1p.save_top']/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id=':1p.save_top']/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR><!--calendar page-->
+<TR style="CURSOR: pointer">
+<TD>waitForText</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML="Meeting 8 pm today">Meeting 8 pm today</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML="Meeting 8 pm today">Meeting 8 pm today</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML></TD></TR><!--event page-->
+<TR style="CURSOR: pointer">
+<TD>waitForElementPresent</TD>
+<TD>//div[5]/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[5]/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR><!--calendar page-->
+<TR style="CURSOR: pointer">
+<TD>assertTextNotPresent</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML="Meeting 8 pm today">Meeting 8 pm today</TD></TR></TBODY></TABLE></DIV></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">AddEventUniqueTimeTest.html</a><br/><DIV>
+<TABLE border=1 cellSpacing=1 cellPadding=1>
+<THEAD>
+<TR class="title status_failed">
+<TD colSpan=3>AddEventUniqueTimeTest</TD></TR></THEAD>
+<TBODY>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>open</TD>
+<TD>http://www.google.com/</TD>
+<TD originalHTML></TD></TR><!--options img btn-->
+<TR style="CURSOR: pointer" class="  status_passed">
+<TD>assertElementPresent</TD>
+<TD>//a[@href='http://www.google.bg/intl/bg/options/']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>click</TD>
+<TD>//a[@href='http://www.google.bg/intl/bg/options/']</TD>
+<TD originalHTML></TD></TR><!--calendar img btn-->
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>waitForElementPresent</TD>
+<TD>//li[7]/a/span</TD>
+<TD originalHTML="2000">2000</TD></TR>
+<TR style="CURSOR: pointer" class="  status_passed">
+<TD>assertElementPresent</TD>
+<TD>//li[7]/a/span</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>clickAndWait</TD>
+<TD>//li[7]/a/span</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer" class="  status_done">
+<TD>waitForPageToLoad</TD>
+<TD>3000</TD>
+<TD originalHTML></TD></TR><!--calendar page-->
+<TR style="CURSOR: pointer" class="  status_failed">
+<TD>assertTitle</TD>
+<TD>Google &#1050;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;</TD>
+<TD originalHTML>Actual&nbsp;value&nbsp;'&#1047;&#1072;&#1087;&#1086;&#1079;&#1085;&#1072;&#1081;&#1090;&#1077;&nbsp;&#1089;&#1077;&nbsp;&#1089;&nbsp;Google&nbsp;&#1044;&#1080;&#1089;&#1082;&nbsp;?&nbsp;&#1074;&#1089;&#1080;&#1095;&#1082;&#1080;&#1090;&#1077;&nbsp;&#1074;&#1080;&nbsp;&#1092;&#1072;&#1081;&#1083;&#1086;&#1074;&#1077;&nbsp;&#1085;&#1072;&nbsp;&#1077;&#1076;&#1085;&#1086;&nbsp;&#1084;&#1103;&#1089;&#1090;&#1086;'&nbsp;did&nbsp;not&nbsp;match&nbsp;'Google&nbsp;&#1050;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;'</TD></TR><!--new event img btn-->
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='sidebar']/div/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id='sidebar']/div/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>waitForElementPresent</TD>
+<TD>//div[@id='coverinner']/div/div[2]/input</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='coverinner']/div/div[2]/input</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>storeEval</TD>
+<TD>javascript:{new Date();}</TD>
+<TD originalHTML="TodayDateTime">TodayDateTime</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>echo</TD>
+<TD>${TodayDateTime}</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//div[@id='coverinner']/div/div[2]/input</TD>
+<TD originalHTML="${TodayDateTime}">${TodayDateTime}</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//input[@id=':1u-st']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//input[@id=':1u-st']</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>type</TD>
+<TD>//input[@id=':1u-st']</TD>
+<TD originalHTML="20:00">20:00</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id=':1p.save_top']/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id=':1p.save_top']/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR><!--calendar page-->
+<TR style="CURSOR: pointer">
+<TD>waitForText</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML="${TodayDateTime}">${TodayDateTime}</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML="${TodayDateTime}">${TodayDateTime}</TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML></TD></TR><!--event page-->
+<TR style="CURSOR: pointer">
+<TD>waitForElementPresent</TD>
+<TD>//div[5]/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR>
+<TR style="CURSOR: pointer">
+<TD>click</TD>
+<TD>//div[5]/div/div/div/div/div[2]</TD>
+<TD originalHTML></TD></TR><!--calendar page-->
+<TR style="CURSOR: pointer">
+<TD>assertTextNotPresent</TD>
+<TD>//div[@id='tgCol5']/div/div/dl/dd/span</TD>
+<TD originalHTML="${TodayDateTime}">${TodayDateTime}</TD></TR></TBODY></TABLE></DIV></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/GoogleLoginTest.html
+info: Executing: |open | http://www.google.com/ |  |
+info: Executing: |waitForPageToLoad | 3000 |  |
+info: Executing: |assertTitle | Google |  |
+info: Executing: |assertElementPresent | //div[3]/div/a |  |
+error: false
+warn: currentTest.recordFailure: false
+info: Starting test /selenium-server/tests/AddEventTest.html
+info: Executing: |selectWindow | Google |  |
+info: Executing: |assertElementPresent | //a[@href=&apos;http://www.google.bg/intl/bg/options/&apos;] |  |
+info: Executing: |click | //a[@href=&apos;http://www.google.bg/intl/bg/options/&apos;] |  |
+info: Executing: |waitForElementPresent | //li[7]/a/span | 2000 |
+info: Executing: |assertElementPresent | //li[7]/a/span |  |
+info: Executing: |clickAndWait | //li[7]/a/span |  |
+info: Executing: |waitForPageToLoad | 3000 |  |
+info: Executing: |assertTitle | Google &amp;#1050;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1088; |  |
+error: Actual value &apos;&amp;#1047;&amp;#1072;&amp;#1087;&amp;#1086;&amp;#1079;&amp;#1085;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077; &amp;#1089;&amp;#1077; &amp;#1089; Google &amp;#1044;&amp;#1080;&amp;#1089;&amp;#1082; ? &amp;#1074;&amp;#1089;&amp;#1080;&amp;#1095;&amp;#1082;&amp;#1080;&amp;#1090;&amp;#1077; &amp;#1074;&amp;#1080; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083;&amp;#1086;&amp;#1074;&amp;#1077; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1076;&amp;#1085;&amp;#1086; &amp;#1084;&amp;#1103;&amp;#1089;&amp;#1090;&amp;#1086;&apos; did not match &apos;Google &amp;#1050;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1088;&apos;
+warn: currentTest.recordFailure: Actual value &apos;&amp;#1047;&amp;#1072;&amp;#1087;&amp;#1086;&amp;#1079;&amp;#1085;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077; &amp;#1089;&amp;#1077; &amp;#1089; Google &amp;#1044;&amp;#1080;&amp;#1089;&amp;#1082; ? &amp;#1074;&amp;#1089;&amp;#1080;&amp;#1095;&amp;#1082;&amp;#1080;&amp;#1090;&amp;#1077; &amp;#1074;&amp;#1080; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083;&amp;#1086;&amp;#1074;&amp;#1077; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1076;&amp;#1085;&amp;#1086; &amp;#1084;&amp;#1103;&amp;#1089;&amp;#1090;&amp;#1086;&apos; did not match &apos;Google &amp;#1050;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1088;&apos;
+info: Starting test /selenium-server/tests/AddEventUniqueTimeTest.html
+info: Executing: |open | http://www.google.com/ |  |
+info: Executing: |assertElementPresent | //a[@href=&apos;http://www.google.bg/intl/bg/options/&apos;] |  |
+info: Executing: |click | //a[@href=&apos;http://www.google.bg/intl/bg/options/&apos;] |  |
+info: Executing: |waitForElementPresent | //li[7]/a/span | 2000 |
+info: Executing: |assertElementPresent | //li[7]/a/span |  |
+info: Executing: |clickAndWait | //li[7]/a/span |  |
+info: Executing: |waitForPageToLoad | 3000 |  |
+info: Executing: |assertTitle | Google &amp;#1050;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1088; |  |
+error: Actual value &apos;&amp;#1047;&amp;#1072;&amp;#1087;&amp;#1086;&amp;#1079;&amp;#1085;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077; &amp;#1089;&amp;#1077; &amp;#1089; Google &amp;#1044;&amp;#1080;&amp;#1089;&amp;#1082; ? &amp;#1074;&amp;#1089;&amp;#1080;&amp;#1095;&amp;#1082;&amp;#1080;&amp;#1090;&amp;#1077; &amp;#1074;&amp;#1080; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083;&amp;#1086;&amp;#1074;&amp;#1077; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1076;&amp;#1085;&amp;#1086; &amp;#1084;&amp;#1103;&amp;#1089;&amp;#1090;&amp;#1086;&apos; did not match &apos;Google &amp;#1050;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1088;&apos;
+warn: currentTest.recordFailure: Actual value &apos;&amp;#1047;&amp;#1072;&amp;#1087;&amp;#1086;&amp;#1079;&amp;#1085;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077; &amp;#1089;&amp;#1077; &amp;#1089; Google &amp;#1044;&amp;#1080;&amp;#1089;&amp;#1082; ? &amp;#1074;&amp;#1089;&amp;#1080;&amp;#1095;&amp;#1082;&amp;#1080;&amp;#1090;&amp;#1077; &amp;#1074;&amp;#1080; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083;&amp;#1086;&amp;#1074;&amp;#1077; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1076;&amp;#1085;&amp;#1086; &amp;#1084;&amp;#1103;&amp;#1089;&amp;#1090;&amp;#1086;&apos; did not match &apos;Google &amp;#1050;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1088;&apos;
+</pre></body></html>

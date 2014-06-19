@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:49446/" />
+<title>NoInputLogin</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NoInputLogin</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://demo.nostresscommerce.cz/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=My Account</td>
+	<td>My Account</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.required</td>
+	<td>exact:*Email Address</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='login-form']//li[2]/label</td>
+	<td>*Password</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=pass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=send2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=send2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=p.required</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.required</td>
+	<td>exact:* Required Fields</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=advice-required-entry-email</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=advice-required-entry-pass</td>
+	<td>This is a required field.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

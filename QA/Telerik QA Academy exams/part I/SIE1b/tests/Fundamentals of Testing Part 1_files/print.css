@@ -1,0 +1,16 @@
+body {
+	width:100%;
+}
+#submit, .submit, #header, #nav {
+	display:none;
+}
+
+table.report-table {
+	display:block;
+	margin:0;
+}
+
+#content {
+	width:100%;
+	margin:0;
+}

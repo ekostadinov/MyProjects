@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="OnePage" Id="d04bfbfb-9741-4790-8ab9-ed8e08b17bc9" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="OnePage.dbab93c6-c1ec-491e-831a-c8bf80bbfc85.rec.webtestresult">
+  <Items>
+    <Comment CommentText="GOTO HOME PAGE" />
+    <Request Method="GET" Guid="d7ad68d7-8005-4820-99a5-cc8a920e888d" Version="1.1" Url="http://localhost:6464/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="780b930f-d8e4-4e9f-9c78-6ec5f055bfe7" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gics2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+        <Request Method="GET" Guid="c5688c06-bf01-4037-ba7f-e177b154cbff" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|7f8f83a1-de9a-cfba-e32c-8f02be75a1c9|,|1401422860605|,||,|Car%20Service|,|http%3A%2F%2Flocalhost%3A6464%2F|,||,|1401411674333|,|1401411674349|,|274|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|7f8f83a1-de9a-cfba-e32c-8f02be75a1c9|,|1401422860605|,||,|Car%20Service|,|http%3A%2F%2Flocalhost%3A6464%2F|,||,|1401411674333|,|1401411674349|,|274|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="6232d240-f6f1-4031-9e15-998fa9f62641" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PageVisitCounter_1" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="14627e76-11c0-4574-b1cf-811e8ed328d0" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gcrs2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="ed74961b-0e5a-4383-a164-d02ec859ce44" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="1e3d0cee-2742-4dbd-b78d-a5d4e3968fe2" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="ed5f994b-8798-45cd-8f68-0dd9293613b9" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="aad72e56-5472-4a68-8817-0efa695a1a16" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="51413f04-329d-45c6-ba10-d5286ffa1f5e" Version="1.1" Url="http://c.mscimg.com:0/stub/js/localhost:6464" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="4747c7db-3cde-49d9-9c2e-0671417ea41e" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="33da975d-11b0-438f-877b-6b378bb30bd6" Version="1.1" Url="http://clkmon.com/adServe/getTag" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="pid" Value="4082" RecordedValue="4082" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cid" Value="1050661" RecordedValue="1050661" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="type" Value="inject" RecordedValue="inject" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="09f24196-b7fe-45ec-870c-d9a86274dd40" Version="1.1" Url="http://www.adcash.com/script/java.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="option" Value="rotateur" RecordedValue="rotateur" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rotateur" Value="232685" RecordedValue="232685" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c04c632a-a4f9-48f2-be08-9421aa0cb3a6" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a2a6f212-9a55-418c-8ef5-761f37989f9e" Version="1.1" Url="http://c.mscimg.com:0/lei/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="1df27362-d6ac-4238-81dd-0b8dc98e81d8" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="dccf4ef0-07e1-45a4-9e19-bbf582985d3a" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="260323731|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Flocalhost%3A6464%2F|,||,|274|,|1401422861525|,|SerialTrunc|,|7f8f83a1-de9a-cfba-e32c-8f02be75a1c9" RecordedValue="260323731|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Flocalhost%3A6464%2F|,||,|274|,|1401422861525|,|SerialTrunc|,|7f8f83a1-de9a-cfba-e32c-8f02be75a1c9" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="526f4a1e-89b2-48f8-9405-09140c332f1a" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4056613d-c34a-4f6f-a5d3-4a34cf5ff8d5" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c417c453-8661-4cb7-bf2b-c4e08717191b" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2c3cc8b4-d8e3-48e2-8c4b-5f16458e8258" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="324b1b5d-dc52-4cb7-a884-a58bb4d1c5f2" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a3942458-e719-4b78-b547-3cc3859eb81e" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="9" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cc" Value="bg" RecordedValue="bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Comment CommentText="CLICK LOGIN BTN" />
+    <Request Method="GET" Guid="522e41da-e1ee-446a-9f26-2017c26abbf3" Version="1.1" Url="http://localhost:6464/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="bbff5d7b-6f9b-461b-a61b-9a2ffbed81df" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gics2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+        <Request Method="GET" Guid="2052178f-3640-4b66-85ee-05144f8bb363" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <QueryStringParameters>
+            <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|8384e538-2bdc-b6ca-8a72-714b4432b464|,|1401422889997|,||,|Car%20Service%20Login|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|1401411674333|,|1401411674349|,|274|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|8384e538-2bdc-b6ca-8a72-714b4432b464|,|1401422889997|,||,|Car%20Service%20Login|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|1401411674333|,|1401411674349|,|274|,||,||,||,||,|MSIE|,|8.0|,|Browser|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="a1182d67-08a8-4b08-b7b2-33deec54f3a0" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8a6312a2-0668-47f6-a047-7698431655af" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PageVisitCounter_1" Value="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" RecordedValue="SerialTrunc|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="6e29910f-5c14-47c8-b5e9-492de5a001bd" Version="1.1" Url="http://apiserialtruncco-a.akamaihd.net:0/gcrs2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="58cf0adc-a4a9-4e4f-ac8e-dd22b81496b9" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1faa072b-243f-4506-8109-8d19ec202fa4" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="386588a4-902f-482a-a41a-77625c32cd16" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="28fad48a-4efd-46a8-99fd-7d8579c5b9a3" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7f9d393d-9abd-409f-a041-9835366bcfc2" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="dcfc1c80-6aa0-4809-bf18-914b40a100a6" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f2a487fa-c44d-4a19-97a6-b9e8a73a1842" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="76533fce-15a7-4c91-a7b1-84d153158ce8" Version="1.1" Url="http://c.mscimg.com:0/stub/js/localhost:6464" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="ce082480-9527-4877-9bfd-20a77c8bba17" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="aa94f2da-1739-4f8f-a75e-4ae96ec08ff1" Version="1.1" Url="http://clkmon.com/adServe/getTag" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="pid" Value="4082" RecordedValue="4082" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cid" Value="1050661" RecordedValue="1050661" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="type" Value="inject" RecordedValue="inject" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="a6bfc393-3c3a-4f2a-a13c-9fab36c91d80" Version="1.1" Url="http://www.adcash.com/script/java.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="option" Value="rotateur" RecordedValue="rotateur" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rotateur" Value="232685" RecordedValue="232685" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4b5a1ce8-8fd9-4d3f-8f47-341a24da8c21" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="61dc4cab-4a03-4a43-9457-40867527a7ad" Version="1.1" Url="http://c.mscimg.com:0/lei/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a8accace-6909-4c25-b9b1-ac16b53f0d0c" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="39582882|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|274|,|1401422890122|,|SerialTrunc|,|8384e538-2bdc-b6ca-8a72-714b4432b464" RecordedValue="39582882|,|1700DEEE-8E94-4B5D-8F7E-55F2E0C294C0|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|274|,|1401422890122|,|SerialTrunc|,|8384e538-2bdc-b6ca-8a72-714b4432b464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c6bfb988-cb04-4067-ad7c-d194d1fc235d" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0cd35119-9add-4d52-be78-779e1caa2dfa" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9a803dd4-ba89-4771-8dea-9e66ceda0d90" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="a406d148-e5b9-4e55-adc7-de848857edb9" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cc" Value="bg" RecordedValue="bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

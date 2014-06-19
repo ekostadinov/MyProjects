@@ -1,0 +1,196 @@
+html {
+	background-color: #9ea4a7;
+	padding:10px;
+}
+
+body {
+	margin: auto;
+	font-family: "Verdana", "Arial", sans-serif;
+	color:#444;
+	width:550px;
+}
+
+
+#name {
+	float:right;
+	padding:0px;
+	font-size:12px;	
+	margin-top:0;
+}
+h4.label {
+	margin-bottom:0;
+	margin-top:0px;
+}
+
+h4.more-top-space {
+	margin-top:10px;
+}
+
+.light {
+	font-weight: normal;
+}
+
+#title {
+	margin-top:0px;
+	font-size:18px;
+}
+
+#score {
+	margin-top:0px;
+	font-size:14px;
+}
+
+#introduction, #conclusion {
+	margin-bottom:10px;	
+	font-size:12px;
+	line-height: 18px;
+}
+
+
+.question-table {
+	width:100%;
+}
+
+.question-info {
+	border-bottom:1px dotted #333;
+	padding:3px;
+	font-size:12px;
+	text-align: center;
+	font-weight:bold;
+}
+
+.question {
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:12px;
+	line-height: 18px;
+}
+
+.input {
+	text-align: right;
+	vertical-align: middle;
+}
+
+.input input {
+	width:13px;
+	height:13px;
+}
+
+
+
+.answer {
+	vertical-align: top;
+	font-size:12px;
+	border:3px solid #fff;
+	width:100%;
+}
+
+.break {
+	clear:both;
+	height:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#submit {
+	display:block;
+	margin: auto;
+	text-align: center;
+	margin-top:15px;
+}
+
+#submit a:link, #submit a:visited, #submit a:hover {
+	margin-left:10px;
+	font-size:10px;
+	color:#333;
+}
+
+#login {
+	background-color:#fff;	
+	padding:10px 35px 10px 35px;
+	font-size:12px;
+	text-align: center;
+	display:inline-block;
+	margin-top:0;
+	width:300px;
+}
+
+#login label, #login input {
+	text-align: center;
+
+}
+
+.error {
+	color:#f00;
+	font-weight: bold;	
+}
+
+.has-error {
+	color:#fff;
+	font-weight: bold;
+	background-color:#f00;	
+}
+
+#content {
+	background-color:#fff;
+	padding:10px;	
+}
+
+#login-tab {
+	list-style-type:none;
+	text-align:center;
+	margin-left:0;
+	padding-left:0;
+	margin-bottom:4px;
+	padding-bottom:0;
+}
+
+#login-tab li {
+	display:inline;
+	font-size:10px;
+	margin-bottom:0px;
+}
+
+#login-tab a:link, #login-tab a:visited, #login-tab a:hover {
+	color:#3d577a;
+	text-decoration:none;
+}
+
+#login-tab a:link, #login-tab a:visited, #login-tab a:hover {
+	color:#333;
+	padding:5px;
+	background-color:#efefef;
+}
+
+#login-tab a:hover {
+	text-decoration: underline;
+
+}
+
+#login-tab a.active:link, #login-tab a.active:visited, #login-tab a.active:hover {
+	background-color:#fff;
+	padding:5px;
+	font-weight: bold;
+
+}
+
+#logout {
+	float:left;
+}
+
+.correct, .incorrect {
+	font-weight: bold;	
+	margin-left:2px;
+}
+
+.correct img, .incorrect img {
+	vertical-align: middle;	
+}
+
+.correct {
+	color:#387c33;
+}
+
+.incorrect {
+	color:#e42224;
+}

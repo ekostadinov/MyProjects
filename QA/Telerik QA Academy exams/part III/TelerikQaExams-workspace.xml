@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="TelerikQaExams" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="CalculatorDemo">C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part III/SQAexams3a/WebServiceTesting_SoapUI/CalculatorDemo-soapui-project.xml</con:project>
+  <con:project name="TemperatureConversionsTask">C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part III/SQAexams3a/WebServiceTesting_SoapUI/TemperatureConversionsTask-soapui-project.xml</con:project>
+</con:soapui-workspace>

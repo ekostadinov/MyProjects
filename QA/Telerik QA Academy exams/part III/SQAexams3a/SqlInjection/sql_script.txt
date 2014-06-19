@@ -1,0 +1,9 @@
+'
+'''
+
+'; delete from dbo.Bugs; --
+
+
+select count(*) from dbo.Projects
+
+delete from dbo.Bugs

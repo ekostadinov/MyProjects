@@ -1,0 +1,11 @@
+testAdmin
+http://localhost:6464/Administrator/Projects.aspx
+http://localhost:6464/Administrator/Project.aspx?projectId=1
+http://localhost:6464/Administrator/Testers.aspx
+http://localhost:6464/Administrator/Tester.aspx?testerId=1
+http://localhost:6464/Inquiries/Inquiries.aspx?mode=administrator
+
+test
+http://localhost:6464/Inquiries/Inquiries.aspx?mode=tester
+
+http://localhost:6464/Tester/changepassword.aspx?testerid=2

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:49446/" />
+<title>RandNumberRedirect</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RandNumberRedirect</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.random.org/integers/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>RANDOM.ORG - Integer Generator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=num</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=num</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=min</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=max</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=max</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@value='Get Numbers']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Get Numbers']</td>
+	<td>2000</td>
+</tr>
+<!--generated rand number-->
+<tr>
+	<td>storeText</td>
+	<td>css=pre.data</td>
+	<td>randNum</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${randNum}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['randNum'] == 1</td>
+	<td>isOne</td>
+</tr>
+<!--isTwo-->
+<tr>
+	<td>label</td>
+	<td>isTwo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Home')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'Home')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>RANDOM.ORG - True Random Number Service</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>finish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>isOne</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Learn More')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//ul[@id='navigation']/li[9]/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='navigation']/li[9]/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>RANDOM.ORG - Frequently Asked Questions (FAQ)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Home')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'Home')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>RANDOM.ORG - True Random Number Service</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finish</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

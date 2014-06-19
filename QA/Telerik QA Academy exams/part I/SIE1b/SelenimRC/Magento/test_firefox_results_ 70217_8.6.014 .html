@@ -1,0 +1,292 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>10</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>18</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.41</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">IncorrectInputLogin</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">NoInputLogin</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">IncorrectInputLogin.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">IncorrectInputLogin</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://demo.nostresscommerce.cz/</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>link=My Account</td>
+	<td>My Account</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=label.required</td>
+	<td>exact:*Email Address</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=email</td>
+	<td>incorrect@mail.test</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//form[@id='login-form']//li[2]/label</td>
+	<td>*Password</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>id=pass</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=pass</td>
+	<td>123456</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>id=send2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=send2</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=li &gt; span</td>
+	<td>Invalid login or password.</td>
+</tr>
+
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">NoInputLogin.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">NoInputLogin</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://demo.nostresscommerce.cz/</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>link=My Account</td>
+	<td>My Account</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=label.required</td>
+	<td>exact:*Email Address</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//form[@id='login-form']//li[2]/label</td>
+	<td>*Password</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>id=pass</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>id=send2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=send2</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=p.required</td>
+	<td>2000</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=p.required</td>
+	<td>exact:* Required Fields</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>id=advice-required-entry-email</td>
+	<td>This is a required field.</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>id=advice-required-entry-pass</td>
+	<td>This is a required field.</td>
+</tr>
+
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/IncorrectInputLogin.html
+info: Executing: |open | http://demo.nostresscommerce.cz/ |  |
+info: Executing: |assertText | link=My Account | My Account |
+info: Executing: |assertElementPresent | link=My Account |  |
+info: Executing: |clickAndWait | link=My Account |  |
+info: Executing: |assertText | css=label.required | exact:*Email Address |
+info: Executing: |assertElementPresent | id=email |  |
+info: Executing: |type | id=email | incorrect@mail.test |
+info: Executing: |assertText | //form[@id=&apos;login-form&apos;]//li[2]/label | *Password |
+info: Executing: |assertElementPresent | id=pass |  |
+info: Executing: |type | id=pass | 123456 |
+info: Executing: |assertElementPresent | id=send2 |  |
+info: Executing: |clickAndWait | id=send2 |  |
+info: Executing: |assertText | css=li &gt; span | Invalid login or password. |
+info: Starting test /selenium-server/tests/NoInputLogin.html
+info: Executing: |open | http://demo.nostresscommerce.cz/ |  |
+info: Executing: |assertText | link=My Account | My Account |
+info: Executing: |assertElementPresent | link=My Account |  |
+info: Executing: |clickAndWait | link=My Account |  |
+info: Executing: |assertText | css=label.required | exact:*Email Address |
+info: Executing: |assertElementPresent | id=email |  |
+info: Executing: |assertText | //form[@id=&apos;login-form&apos;]//li[2]/label | *Password |
+info: Executing: |assertElementPresent | id=pass |  |
+info: Executing: |assertElementPresent | id=send2 |  |
+info: Executing: |click | id=send2 |  |
+info: Executing: |waitForElementPresent | css=p.required | 2000 |
+info: Executing: |assertText | css=p.required | exact:* Required Fields |
+info: Executing: |assertText | id=advice-required-entry-email | This is a required field. |
+info: Executing: |assertText | id=advice-required-entry-pass | This is a required field. |
+</pre></body></html>
