@@ -3,4 +3,5 @@
   <con:settings/>
   <con:project name="CalculatorDemo">C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part III/SQAexams3a/WebServiceTesting_SoapUI/CalculatorDemo-soapui-project.xml</con:project>
   <con:project name="TemperatureConversionsTask">C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part III/SQAexams3a/WebServiceTesting_SoapUI/TemperatureConversionsTask-soapui-project.xml</con:project>
+  <con:project name="TemperatureConversionsTask2">C:/Users/User/Documents/GitHub/MyProjects/QA/Telerik QA Academy exams/part III/SQAexams3b/TemperatureConversionsTask2-soapui-project.xml</con:project>
 </con:soapui-workspace>

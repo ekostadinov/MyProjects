@@ -1,0 +1,109 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>telerik-academy-pic.sikuli\telerik-academy-pic.sikuli</h2> <a href="telerik-academy-pic.sikuli\telerik-academy-pic.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+googleIcon = <img src="1403667900762.png" />
+<span class="skw">find</span>(googleIcon)
+<span class="skw">click</span>(googleIcon)
+searchInput = <img src="1403668045184.png" />
+<span class="skw">wait</span>(searchInput, <span class="dig">10</span>)
+<span class="skw">find</span>(searchInput)
+<span class="skw">type</span>(searchInput, <span class="str">"telerik academy"</span>)
+searchBtn = <img src="1403668092799.png" />
+<span class="skw">find</span>(searchBtn)
+<span class="skw">click</span>(searchBtn)
+imagesSearch = Pattern(<img src="1403668152024.png" />).similar(<span class="dig">0.95</span>)
+<span class="skw">wait</span>(<span class="dig">5</span>)
+<span class="skw">click</span>(imagesSearch)
+targetImg = <img src="1403668212481.png" />
+<span class="skw">find</span>(targetImg)
+<span class="skw">rightClick</span>(targetImg)
+copyImgUrl = <img src="1403668398256.png" />
+<span class="skw">wait</span>(copyImgUrl, <span class="dig">2</span>)
+<span class="skw">click</span>(copyImgUrl)
+newTab = <img src="1403668465010.png" />
+<span class="skw">find</span>(newTab)
+<span class="skw">click</span>(newTab)
+searchInputTab = <img src="1403753573763.png" />
+<span class="skw">wait</span>(searchInputTab, <span class="dig">5</span>)
+<span class="skw">rightClick</span>(searchInputTab)
+pasteBtn = <img src="1403668626947.png" />
+<span class="skw">wait</span>(pasteBtn, <span class="dig">2</span>)
+<span class="skw">click</span>(pasteBtn)
+<span class="cmt">#send ENTER 
+</span><span class="skw">type</span>(<img src="1403753887608.png" />, <span class="str">"\n"</span>)
+<span class="skw">wait</span>(<img src="1403753975505.png" />, <span class="dig">5</span>)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+closeBtn = <img src="1403754004945.png" />
+<span class="skw">click</span>(closeBtn)
+</pre>
+</body>
+</html>

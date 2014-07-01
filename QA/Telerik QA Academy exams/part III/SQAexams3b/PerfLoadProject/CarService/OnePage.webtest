@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="OnePage" Id="de76fc5c-1364-4d8d-826c-0edd4d05dc83" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="OnePage.3398b44c-7913-4d0e-9998-bc72c6fff9af.rec.webtestresult">
+  <Items>
+    <Comment CommentText="GOTO HOMEPAGE" />
+    <Request Method="GET" Guid="c22a5a65-2199-4053-8cc7-d32c0e837f1a" Version="1.1" Url="http://localhost:6464/" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam2.g" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;g=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam3.is" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?is=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam4.bp" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;bp=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam19.g" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;g=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="df0d2a31-ba33-4679-a8ca-19e48051575e" Version="1.1" Url="http://localhost:6464/favicon.ico" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="be26bfd3-9c3e-4d57-b628-56f9d28bc3ad" Version="1.1" Url="https://api.serialtrunc.com/gscf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="f7c14288-6e4f-4896-af67-5c846bff9097" Version="1.1" Url="https://apiserialtruncco-a.akamaihd.net:0/gscs" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+      <QueryStringParameters>
+        <QueryStringParameter Name="n" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="t" Value="Car%20Service" RecordedValue="Car%20Service" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="r" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="g" Value="1700deee-8e94-4b5d-8f7e-55f2e0c294c0" RecordedValue="1700deee-8e94-4b5d-8f7e-55f2e0c294c0" CorrelationBinding="{{QueryStringParam2.g}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="is" Value="EF23DDBG" RecordedValue="EF23DDBG" CorrelationBinding="{{QueryStringParam3.is}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bp" Value="PB" RecordedValue="PB" CorrelationBinding="{{QueryStringParam4.bp}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="6455e53d-7e6a-4b4d-8964-8a46a797768c" Version="1.1" Url="https://apiserialtruncco-a.akamaihd.net/gd2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="r" Value="20140628" RecordedValue="20140628" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d2ba8b7b-e65b-4a0c-a554-31c456e78203" Version="1.1" Url="https://apiserialtruncco-a.akamaihd.net/ga2" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam85.v" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?v=" />
+            <RuleParameter Name="EndsWith" Value="\" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam106.pid" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?pid=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam108.type" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;type=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam121.v" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?v=" />
+            <RuleParameter Name="EndsWith" Value="\" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam132.option" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?option=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam133.rotateur" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;rotateur=" />
+            <RuleParameter Name="EndsWith" Value="\" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="r" Value="20140628" RecordedValue="20140628" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="6660caaa-5ead-4827-b559-78221691a4f9" Version="1.1" Url="https://api.serialtrunc.com/gu" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="r" Value="32653754474218532000" RecordedValue="32653754474218532000" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="g" Value="1700deee-8e94-4b5d-8f7e-55f2e0c294c0" RecordedValue="1700deee-8e94-4b5d-8f7e-55f2e0c294c0" CorrelationBinding="{{QueryStringParam19.g}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c9349363-0eb9-469f-bdaf-fafcc8f6bc9d" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Comment CommentText="GOTO LOGIN PAGE" />
+    <Request Method="GET" Guid="94681ace-0327-4f95-bae0-62dd9994d6a8" Version="1.1" Url="http://localhost:6464/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="d5a8422c-5f43-4bca-9a30-4d098f3d193c" Version="1.1" Url="http://localhost:6464/favicon.ico" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam22.g" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;g=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam23.is" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?is=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam24.bp" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;bp=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="cb83fffd-6d85-43ff-b94c-f0c982a2e502" Version="1.1" Url="https://api.serialtrunc.com/gscf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="90006eae-d155-4c9f-9921-f980506f5fad" Version="1.1" Url="https://apiserialtruncco-a.akamaihd.net:0/gscs" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+      <QueryStringParameters>
+        <QueryStringParameter Name="n" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="t" Value="Car%20Service%20Login" RecordedValue="Car%20Service%20Login" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="r" Value="http%3A%2F%2Flocalhost%3A6464%2F" RecordedValue="http%3A%2F%2Flocalhost%3A6464%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="g" Value="1700deee-8e94-4b5d-8f7e-55f2e0c294c0" RecordedValue="1700deee-8e94-4b5d-8f7e-55f2e0c294c0" CorrelationBinding="{{QueryStringParam22.g}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="is" Value="EF23DDBG" RecordedValue="EF23DDBG" CorrelationBinding="{{QueryStringParam23.is}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bp" Value="PB" RecordedValue="PB" CorrelationBinding="{{QueryStringParam24.bp}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8498ddb9-964f-4b0e-ac6f-919dd9078177" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PageVisitCounter_1" Value="PB_SerialTrunc|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0" RecordedValue="PB_SerialTrunc|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="146d94c2-129d-46db-9f55-9cbe526df188" Version="1.1" Url="https://api.crtinv.com/uchelper" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="l" Value="bG9jYWxob3N0" RecordedValue="bG9jYWxob3N0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="k" Value="MTg4" RecordedValue="MTg4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="33731f61-9d4b-4c62-84df-67cb9aa224c9" Version="1.1" Url="http://hdapp1003-a.akamaihd.net/app/easyInline.swf" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="483c15fa-a780-4562-a9f8-a9a364b7fc2b" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PageVisit_2" Value="PB_SerialTrunc|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|1403916177867|,|1403916177580|,|274|,||,||,||,|" RecordedValue="PB_SerialTrunc|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|1403916177867|,|1403916177580|,|274|,||,||,||,|" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d596e06b-f1d6-4921-90ec-23ece6eed8db" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="PanelPageVisit_4" Value="SerialTrunc|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0|,|507ab894-d8a3-dac0-b942-c12c7f1ff1ba|,|1403924485454|,||,|Car%20Service%20Login|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|1403916177867|,|1403916177580|,|274|,||,||,||,||,|MSIE|,|8.0|,|PB|,|bg" RecordedValue="SerialTrunc|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0|,|507ab894-d8a3-dac0-b942-c12c7f1ff1ba|,|1403924485454|,||,|Car%20Service%20Login|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|1403916177867|,|1403916177580|,|274|,||,||,||,||,|MSIE|,|8.0|,|PB|,|bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2e1b64b2-7ace-40a1-a684-83d6630b5048" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/features/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="{{QueryStringParam85.v}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0358f717-8f9f-4187-9bb4-6c45493d9f85" Version="1.1" Url="http://c.mscimg.com:0/search/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="fe815bd8-023f-4877-acf4-291334f55ecc" Version="1.1" Url="http://c.mscimg.com:0/ban/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="b99dd4cd-1e07-4ddc-be6a-1586baf44698" Version="1.1" Url="http://c.mscimg.com:0/demodaga/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="4b1c044f-dce5-4bef-b626-853e745f050a" Version="1.1" Url="http://c.mscimg.com:0/stub/js/localhost:6464" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="27ff92f8-bb03-4dd2-84f2-7337a80a117e" Version="1.1" Url="http://c.mscimg.com:0/advbl/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="d49c7f08-74b8-45f7-8061-2a8911b338fc" Version="1.1" Url="http://clkmon.com/adServe/getTag" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="pid" Value="4082" RecordedValue="4082" CorrelationBinding="{{QueryStringParam106.pid}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cid" Value="1050661" RecordedValue="1050661" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="type" Value="inject" RecordedValue="inject" CorrelationBinding="{{QueryStringParam108.type}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="appName" Value="SerialTrunc" RecordedValue="SerialTrunc" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d8c2f851-c0c0-4cf9-86fe-b7e3bfa84c31" Version="1.1" Url="http://c.mscimg.com:0/rtrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="67a06077-ce91-40d8-a014-16eb6d5a3d6b" Version="1.1" Url="http://c.mscimg.com:0/intrans/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="{{QueryStringParam121.v}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="bb6c9920-e943-49f7-8626-28e5b48cb578" Version="1.1" Url="http://c.mscimg.com:0/lei/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="f886e612-6a60-47f5-944c-ad87060dedf7" Version="1.1" Url="http://www.adcash.com/script/java.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="option" Value="rotateur" RecordedValue="rotateur" CorrelationBinding="{{QueryStringParam132.option}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rotateur" Value="232685" RecordedValue="232685" CorrelationBinding="{{QueryStringParam133.rotateur}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="785dce8d-6c5c-4e4e-a685-80c03932f73b" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/getData.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="72a745da-e42c-4749-8222-f505de5462a3" Version="1.1" Url="https://hdapp1008-a.akamaihd.net/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="515dcfc7-8c7c-4c3c-a5dd-4c31cf3e6133" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d0ae3d76-4850-447c-9e4c-03137d6cbd9c" Version="1.1" Url="https://jsl.infostatsvc.com/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="GcUrlVisit_2" Value="180523600|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|274|,|1403924487234|,|SerialTrunc|,|507ab894-d8a3-dac0-b942-c12c7f1ff1ba" RecordedValue="180523600|,|1700deee-8e94-4b5d-8f7e-55f2e0c294c0|,|http%3A%2F%2Flocalhost%3A6464%2FLogin.aspx|,|http%3A%2F%2Flocalhost%3A6464%2F|,|274|,|1403924487234|,|SerialTrunc|,|507ab894-d8a3-dac0-b942-c12c7f1ff1ba" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c37759a9-15e9-400f-877b-ce8b6f45f1d4" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="dce4d8c4-8589-44d4-91cd-d07e7a5058a8" Version="1.1" Url="https://c.mscimg.com/gsd.html" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="d" Value="http%3A%2F%2Flocalhost%3A6464" RecordedValue="http%3A%2F%2Flocalhost%3A6464" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="865aed59-b7e1-43d6-99d5-72dc8f3fadcd" Version="1.1" Url="http://hdapp1008-a.akamaihd.net:0/app/catBanner/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cc" Value="bg" RecordedValue="bg" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
