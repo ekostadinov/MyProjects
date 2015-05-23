@@ -1,0 +1,52 @@
+﻿class HomePage inherit from SlowLoadableComponent<HomePage>
+public string _pageUrl = read from config.config file
+private IWebDriver _driver
+
+public HomePage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read from config.config the "WebPageLoadTimeSec" param)))
+    _driver = driver
+    PageFactory.InitElements(_driver, this)
+
+[FindsBy(How = How.XPath, Using = "//...")]
+public WebElement SiteLogoContainer
+[FindsBy(How = How.Id, Using = "id")]
+public WebElement SiteLoginContainer
+[FindsBy(How = How.Id, Using = "id")]
+public WebElement UsernameInput
+[FindsBy(How = How.Id, Using = id")]
+public WebElement PassInput
+[FindsBy(How = How.XPath, Using = "//...")]
+public WebElement LoginBtn
+
+function override ExecuteLoad()
+    _driver.Navigate().GoToUrl(_pageUrl)
+    LandingPage landingpage 
+    if (landingpage.isLoaded())
+        landingpage.gotoHomePage()
+    endif
+end
+
+function override bool EvaluateLoadedStatus()
+    LandingPage landingpage 
+    if (landingpage.isLoaded())
+        landingpage.gotoHomePage()
+    endif
+    if (SiteLoginContainer != null && SiteLoginContainer.Displayed)
+        return true
+    endif    
+    return false
+end
+
+function doLogin(string username, string pass)
+    wait = new WebDriverWait(this._driver, TimeSpan.FromSeconds(30))
+    wait.Until<IWebElement>((e) =>
+    {
+        if (UsernameInput.Enabled)
+            return UsernameInput
+        endif
+        return null
+    }).Clear;
+    UsernameInput.SendKeys(username)
+    PassInput.Clear()
+    PassInput.SendKeys(pass)
+    LoginBtn.Click()
+end

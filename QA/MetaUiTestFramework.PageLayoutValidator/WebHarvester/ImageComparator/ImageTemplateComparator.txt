@@ -1,0 +1,37 @@
+﻿// This class provides functionality of checking if particular image is contained in other image template
+// with a configurable margin of similarity.
+static class ImageTemplateComparator
+// Checks if some image is present in particular screenshot
+// param name="imageToSearchFor" is the name of the image element from the project file structure
+static function bool IsScreenContainingImage(string imageToSearchFor, WebDriver driver, WebElement pageElement)
+    string screenShotName = "Screenshot_" + imageToSearchFor + Time.NowTicks + ".jpeg"          
+    string fullScreenshotPath = ResourceManager.PathToScreenshotFolder + screenShotName
+    string imageSystemFile = ResourceManager.GetImageSystemFile(imageToSearchFor, driver, pageElement)
+    using (SystemBitmap searchImage = (cast as SystemBitmap)SystemBitmap.FromFile(imageSystemFile))    
+        ResourceManager.TakeScreenShotOfElement(driver, pageElement, 			
+												ResourceManager.PathToScreenshotFolder, screenShotName, searchImage)
+        using (SystemBitmap screenShot = (cast as SystemBitmap)SystemBitmap.FromFile(fullScreenshotPath))        
+            if (IsSearchedImageFound(screenShot, searchImage))            
+                return true
+            endif
+            return false
+        endusing
+    endusing
+end
+
+static function bool IsSearchedImageFound(this SystemBitmap template, SystemBitmap image)
+    int epsilon = 10;
+    // similarity is set to default as 80%
+    ImageTemplateMatchingLibrary etm = new ImageTemplateMatchingLibrary(0.80)
+    TemplateMatch[] tm = etm.ProcessImage(
+        new ResizeNearestNeighbor(template.Width, template.Height).Apply(template),
+        new ResizeNearestNeighbor(image.Width, image.Height).Apply(image)
+        )
+    if (tm.Length == 1)    
+        Rectangle tempRect = tm[0].Rectangle
+        if (Math.Abs(image.Width - tempRect.Width) < epsilon && Math.Abs(image.Height - tempRect.Height) < epsilon)        
+            return true;
+        endif
+    endif
+    return false
+end

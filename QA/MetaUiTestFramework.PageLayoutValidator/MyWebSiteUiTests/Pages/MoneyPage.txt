@@ -1,0 +1,32 @@
+﻿class MoneyPage inherit from SlowLoadableComponent<MoneyPage>
+private WebDriver _driver
+private HomePage homepage
+
+public MoneyPage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read from config.config the "WebPageLoadTimeSec" param))) 
+    _driver = driver
+    PageFactory.InitElements(_driver, this)
+    homepage = new HomePage(this._driver)
+
+[FindsBy(How = How.XPath, Using = "//...")]
+public WebElement MyElementContainer
+[FindsBy(How = How.XPath, Using = "//...")]
+public WebElement MyBtn
+
+function override bool EvaluateLoadedStatus()
+    if (_driver.Url.Contains("/Money"))              
+        return true
+    endif               
+    return false
+end
+
+function override ExecuteLoad()
+    homepage.Load
+    homepage.doLogin(read from config.config the "Username" param, read from config.config the "Password" param)
+    wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(cast to int(read from config.config the "Default.Wait.For.Element.Sec" param)))    
+    wait.Until<IWebElement>((e) =>
+        if (MyBtn.Enabled)
+            return MyBtn
+        endif
+        return null
+    }).Click
+end

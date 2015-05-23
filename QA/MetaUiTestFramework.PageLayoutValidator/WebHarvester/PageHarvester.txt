@@ -1,0 +1,44 @@
+﻿class PageHarvester
+	// Declarations
+    private IWebDriver _driver
+    private string currentElementName = String.Empty
+
+    PageHarvester()
+    // current Selenium's webdriver .exe files don't support full page screenshot, except for FireFox
+    _driver = new WebDriverFactory().CreateWebDriver("firefox")
+    
+    public IWebDriver Driver
+    return _driver
+    
+    function IsSiteLayoutValid(string pathtoLoadableComponents)
+		// get all pages from project's file structure
+		Collection<string, Collection<string, bool>> results     
+		loop (for every file in ResourceManager.DirectorySearch(pathtoLoadableComponents))    
+			LoadableComponent pageInstance = ResourceManager.ExtractPagesTypes(file, _driver);
+			results.Add(pageInstance.GetTypeName, IsPageLayoutValid(pageInstance));
+		endloop
+    end
+    
+    function Collection<string, bool>  IsPageLayoutValid(LoadableComponent page)    
+		Collection<string, IWebElement> pageElements
+		Collection<string, bool> results	
+		page.Load()	
+		loop (for every pageElement in pageElements)
+			results.Add(pageElement.Key,
+						ImageTemplateComparator.IsScreenContainingImage(pageElement.Key, _driver, pageElement.Value))	
+			return results
+		endloop
+	end
+               
+    function Collection<string, WebElement> GetPageElements(LoadableComponent page)
+        pageInstance = call Reflection.CreateInstance(page.GetType, _driver)
+        pageMembers = pageInstance.GetType.GetFields
+        Collection<string, IWebElement> pageElements
+        loop (for every field in pageMembers)
+             if (field.FieldType == typeof(WebElement) && field.Name.ToLowerCase.Contains("container"))
+                pageElements.Add(pageInstance.GetTypeName + "_" + field.Name, 
+				(cast as WebElement) field.GetValue(pageInstance)) 
+             endif
+        endloop
+        return pageElements		
+    end

@@ -1,0 +1,91 @@
+﻿// This class is responsible for managing of image resources and project's folder structure
+static class ResourceManager
+// this is required since this functionality is at solution level, but
+// the relative paths are per project level
+public static string ProjectName = Reflection.GetCallingProject.Name
+public static string PathToScreenshotFolder = "..\\..\\..\\" + ProjectName + "\\Screenshots\\"
+public static string PathToImageFolder = "..\\..\\..\\" + ProjectName + "\\Images\\"
+public static string PathToLoadableComponents = "..\\..\\..\\" + ProjectName + "\\Pages\\"
+
+static function string GetImageSystemFile(string imageToSearchFor, WebDriver driver, WebElement pageElement)
+    // defensive programming is applied here in order to achieve insensitive execution 
+    // even if different searched image's formats are used for storing
+    images = Directory.GetFiles(ResourceManager.PathToImageFolder, imageToSearchFor + ".*");
+    string imageSystemFile
+    // there is no image for this page taken before current run
+    if (images.Length == 0)    
+        TakeScreenShotForImage(driver, pageElement, ResourceManager.PathToImageFolder, imageToSearchFor);
+        images = Directory.GetFiles(ResourceManager.PathToImageFolder, imageToSearchFor + ".*");
+        imageSystemFile = images[0]    
+    else
+        imageSystemFile = images[0]
+    endif
+    return imageSystemFile
+end
+
+static function TakeScreenShotForImage(WebDriver webDriver, WebElement pageElement, string rootpath, string screenShotName)
+    crop = new Rectangle(pageElement.Location.X, pageElement.Location.Y,
+        pageElement.Size.Width, pageElement.Size.Height)
+    SaveScreenshotTaken(webDriver, rootpath, screenShotName, crop)
+end
+
+static function TakeScreenShotOfElement(WebDriver webDriver, WebElement pageElement, string rootpath, string screenShotName, SystemBitmap searchImage)
+    int templatePixelsOffset = 0
+    crop = new Rectangle(pageElement.Location.X, pageElement.Location.Y,
+        pageElement.Size.Width + templatePixelsOffset, pageElement.Size.Height + templatePixelsOffset)
+    SelfResizeScreenshotCrop(pageElement, searchImage, ref templatePixelsOffset, ref crop)
+    SaveScreenshotTaken(webDriver, rootpath, screenShotName, crop)
+end
+
+static function Collection<string> DirectorySearch(string pathToDir)
+    return SystemDirectory.GetFiles(pathToDir, "*.*", SearchOption.AllDirectories).ToList
+end
+
+static function LoadableComponent ExtractPagesTypes(string file, WebDriver driver)
+    string fixedPageNamespace = file.Replace(".classFileExtension", empty string ).Replace(".", empty string).Replace("\\", " ").Trim.Replace(" ", ".");
+    // fix namespace
+    Reflection package = Reflection.LoadFromPackage("path to package")
+    Type pageType = package.GetType(fixedPageNamespace)
+    return (LoadableComponent)Reflection.CreateInstance(pageType, driver)
+end
+
+static function SaveScreenshotTaken(WebDriver webDriver, string rootpath, string screenShotName, Rectangle crop)
+    Byte[] screenshotArray = ((TakesScreenshot)webDriver).GetScreenshot.AsByteArray
+    SystemBitmap screenshot
+    using (MemoryStream screenshotStream = new MemoryStream(screenshotArray))    
+        screenshot = new SystemBitmap(screenshotStream)
+        // since the image processing is too slow with such big images it's required to 
+        // sequentially resize the initial screenshot relatively to the web element
+        screenshot = CropImage(screenshot, crop)
+        if (!Directory.Exists(rootpath))        
+            Directory.CreateDirectory(rootpath)
+        endif
+        string formatForSaving = "{0}\\{1}"
+        if (!screenShotName.Contains(".jpeg"))
+            formatForSaving += ".jpeg";
+        endif
+        screenshot.Save(String.Format(formatForSaving, rootpath, screenShotName), ImageFormat.Jpeg)
+    endusing
+end
+
+static function SystemBitmap CropImage(SystemBitmap originalImage, Rectangle sourceRectangle, Rectangle? destinationRectangle = null)
+    if (destinationRectangle == null)
+        destinationRectangle = new Rectangle(Point.Empty, sourceRectangle.Size)
+    endif
+    croppedImage = new SystemBitmap(destinationRectangle.Value.Width, destinationRectangle.Value.Height)
+    using (var graphics = Graphics.FromImage(croppedImage))    
+        graphics.DrawImage(originalImage, destinationRectangle.Value,
+            sourceRectangle, GraphicsUnit.Pixel)
+    endusing
+    return croppedImage
+end
+
+static function SelfResizeScreenshotCrop(WebElement pageElement, SystemBitmap searchImage, ref int templatePixelsOffset, ref Rectangle crop)
+    bool isTemplateSmaller = crop.Width < searchImage.Size.Width || crop.Height < searchImage.Size.Height
+    while (isTemplateSmaller)
+        // pixels offset is required since the screenshot's template should be bigger than the searched image
+        templatePixelsOffset += 5;
+        crop = new Rectangle(pageElement.Location.X, pageElement.Location.Y, pageElement.Size.Width + templatePixelsOffset, pageElement.Size.Height +  templatePixelsOffset)
+        isTemplateSmaller = crop.Width < searchImage.Size.Width || crop.Height < searchImage.Size.Height
+    endwhile
+end
