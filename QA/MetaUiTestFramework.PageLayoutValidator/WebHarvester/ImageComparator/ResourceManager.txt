@@ -10,12 +10,12 @@ public static string PathToLoadableComponents = "..\\..\\..\\" + ProjectName + "
 static function string GetImageSystemFile(string imageToSearchFor, WebDriver driver, WebElement pageElement)
     // defensive programming is applied here in order to achieve insensitive execution 
     // even if different searched image's formats are used for storing
-    images = Directory.GetFiles(ResourceManager.PathToImageFolder, imageToSearchFor + ".*");
+    images = Directory.GetFiles(ResourceManager.PathToImageFolder, imageToSearchFor + ".*")
     string imageSystemFile
     // there is no image for this page taken before current run
     if (images.Length == 0)    
-        TakeScreenShotForImage(driver, pageElement, ResourceManager.PathToImageFolder, imageToSearchFor);
-        images = Directory.GetFiles(ResourceManager.PathToImageFolder, imageToSearchFor + ".*");
+        TakeScreenShotForImage(driver, pageElement, ResourceManager.PathToImageFolder, imageToSearchFor)
+        images = Directory.GetFiles(ResourceManager.PathToImageFolder, imageToSearchFor + ".*")
         imageSystemFile = images[0]    
     else
         imageSystemFile = images[0]
