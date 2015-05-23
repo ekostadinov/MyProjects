@@ -1,7 +1,7 @@
 ﻿class PageHarvester
 	// Declarations
     private IWebDriver _driver
-    private string currentElementName = String.Empty
+    private string currentElementName 
 
     PageHarvester()
     // current Selenium's webdriver .exe files don't support full page screenshot, except for FireFox
