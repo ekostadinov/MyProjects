@@ -7,15 +7,15 @@
     // current Selenium's webdriver .exe files don't support full page screenshot, except for FireFox
     _driver = new WebDriverFactory().CreateWebDriver("firefox")
     
-    public IWebDriver Driver
+    public WebDriver Driver
     return _driver
     
     function IsSiteLayoutValid(string pathtoLoadableComponents)
 		// get all pages from project's file structure
 		Collection<string, Collection<string, bool>> results     
 		loop (for every file in ResourceManager.DirectorySearch(pathtoLoadableComponents))    
-			LoadableComponent pageInstance = ResourceManager.ExtractPagesTypes(file, _driver);
-			results.Add(pageInstance.GetTypeName, IsPageLayoutValid(pageInstance));
+			LoadableComponent pageInstance = ResourceManager.ExtractPagesTypes(file, _driver)
+			results.Add(pageInstance.GetTypeName, IsPageLayoutValid(pageInstance))
 		endloop
     end
     
