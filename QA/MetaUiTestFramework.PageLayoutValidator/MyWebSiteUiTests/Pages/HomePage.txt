@@ -1,8 +1,8 @@
 ﻿class HomePage inherit from SlowLoadableComponent<HomePage>
 public string _pageUrl = read from config.config file
-private IWebDriver _driver
+private WebDriver _driver
 
-public HomePage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read from config.config the "WebPageLoadTimeSec" param)))
+public HomePage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read param from config.config)))
     _driver = driver
     PageFactory.InitElements(_driver, this)
 
@@ -37,14 +37,14 @@ function override bool EvaluateLoadedStatus()
 end
 
 function doLogin(string username, string pass)
-    wait = new WebDriverWait(this._driver, TimeSpan.FromSeconds(30))
-    wait.Until<IWebElement>((e) =>
+    wait = new WebDriverWait(this._driver, TimeSpan.FromSeconds(cast to int (read param from config.config)))
+    wait.Until<WebElement>((e) =>
     {
         if (UsernameInput.Enabled)
             return UsernameInput
         endif
         return null
-    }).Clear;
+    }).Clear()
     UsernameInput.SendKeys(username)
     PassInput.Clear()
     PassInput.SendKeys(pass)
