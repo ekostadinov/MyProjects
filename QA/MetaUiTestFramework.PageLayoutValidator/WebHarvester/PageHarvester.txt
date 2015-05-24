@@ -20,22 +20,24 @@
     end
     
     function Collection<string, bool>  IsPageLayoutValid(LoadableComponent page)    
-		Collection<string, IWebElement> pageElements
+		Collection<string, WebElement> pageElements
 		Collection<string, bool> results	
 		page.Load()	
 		loop (for every pageElement in pageElements)
 			results.Add(pageElement.Key,
-						ImageTemplateComparator.IsScreenContainingImage(pageElement.Key, _driver, pageElement.Value))	
+				    ImageTemplateComparator.IsScreenContainingImage(pageElement.Key, _driver, pageElement.Value))	
 			return results
 		endloop
 	end
                
     function Collection<string, WebElement> GetPageElements(LoadableComponent page)
-        pageInstance = call Reflection.CreateInstance(page.GetType, _driver)
-        pageMembers = pageInstance.GetType.GetFields
+        pageInstance = call Reflection.CreateInstance(page.Type, _driver)
+        // since our WebElements are declared as fields, we access them via GetFields(),
+        // but if they were Properties, we can use GetMembers()
+        pageMembers = pageInstance.Type.GetFields()
         Collection<string, IWebElement> pageElements
         loop (for every field in pageMembers)
-             if (field.FieldType == typeof(WebElement) && field.Name.ToLowerCase.Contains("container"))
+             if (field.FieldType == typeof(WebElement) && field.Name.ToLowerCase().Contains("container"))
                 pageElements.Add(pageInstance.GetTypeName + "_" + field.Name, 
 				(cast as WebElement) field.GetValue(pageInstance)) 
              endif
