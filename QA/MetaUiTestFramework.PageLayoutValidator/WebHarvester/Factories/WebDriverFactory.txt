@@ -1,6 +1,6 @@
-﻿// This (SimpleFactory) class is used to create instances of Selenium's web drivers
+// This (SimpleFactory) class is used to create instances of Selenium's web drivers
 class WebDriverFactory
-// Creates IWebDriver instance required by the test specification 
+// Creates WebDriver instance required by the test specification 
 // param name="browserType" is name of the browser, currently only Firefox. The parameter is case insensitive
 // returns WebDriver
 function WebDriver CreateWebDriver(string browserType)
@@ -13,6 +13,3 @@ function WebDriver CreateWebDriver(string browserType)
 		throw Exception("Error: provided browser name was not found in the list of supported browsers!")
 	endswitch
 end
-
-
-
