@@ -1,7 +1,7 @@
 ﻿class LandingPage inherit from SlowLoadableComponent<LandingPage>
-private IWebDriver _driver
+private WebDriver _driver
 
-public LandingPage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read from config.config the "WebPageLoadTimeSec" param)))
+public LandingPage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read param from config.config)))
     _driver = driver;
     PageFactory.InitElements(_driver, this)
 
@@ -30,5 +30,5 @@ function override bool EvaluateLoadedStatus()
 end
 
 function override ExecuteLoad()
-    _driver.Navigate().GoToUrl(read from config.config the "TestingRootUrl" param)
+    _driver.Navigate().GoToUrl(read param from config.config)
 end
