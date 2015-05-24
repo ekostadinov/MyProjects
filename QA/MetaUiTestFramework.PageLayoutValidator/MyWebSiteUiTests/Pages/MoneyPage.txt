@@ -2,7 +2,7 @@
 private WebDriver _driver
 private HomePage homepage
 
-public MoneyPage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read from config.config the "WebPageLoadTimeSec" param))) 
+public MoneyPage(WebDriver driver) base(TimeSpan.FromSeconds(cast to int (read param from config.config))) 
     _driver = driver
     PageFactory.InitElements(_driver, this)
     homepage = new HomePage(this._driver)
@@ -20,13 +20,13 @@ function override bool EvaluateLoadedStatus()
 end
 
 function override ExecuteLoad()
-    homepage.Load
+    homepage.Load()
     homepage.doLogin(read from config.config the "Username" param, read from config.config the "Password" param)
-    wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(cast to int(read from config.config the "Default.Wait.For.Element.Sec" param)))    
+    wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(cast to int(read param from config.config)))    
     wait.Until<IWebElement>((e) =>
         if (MyBtn.Enabled)
             return MyBtn
         endif
         return null
-    }).Click
+    }).Click()
 end
