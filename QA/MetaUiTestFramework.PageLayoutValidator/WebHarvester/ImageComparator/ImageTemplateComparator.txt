@@ -7,10 +7,10 @@ static function bool IsScreenContainingImage(string imageToSearchFor, WebDriver 
     string screenShotName = "Screenshot_" + imageToSearchFor + Time.NowTicks + ".jpeg"          
     string fullScreenshotPath = ResourceManager.PathToScreenshotFolder + screenShotName
     string imageSystemFile = ResourceManager.GetImageSystemFile(imageToSearchFor, driver, pageElement)
-    using (SystemBitmap searchImage = (cast as SystemBitmap)SystemBitmap.FromFile(imageSystemFile))    
+    using (Image searchImage = (cast as Image) call Image function to load from file with param (imageSystemFile))    
         ResourceManager.TakeScreenShotOfElement(driver, pageElement, 			
-												ResourceManager.PathToScreenshotFolder, screenShotName, searchImage)
-        using (SystemBitmap screenShot = (cast as SystemBitmap)SystemBitmap.FromFile(fullScreenshotPath))        
+						ResourceManager.PathToScreenshotFolder, screenShotName, searchImage)
+        using (Image screenShot = (cast as Image)call Image function to load from file with param (fullScreenshotPath))        
             if (IsSearchedImageFound(screenShot, searchImage))            
                 return true
             endif
@@ -19,10 +19,13 @@ static function bool IsScreenContainingImage(string imageToSearchFor, WebDriver 
     endusing
 end
 
-static function bool IsSearchedImageFound(this SystemBitmap template, SystemBitmap image)
+// this function should be responsoble for your image processing and comparison,
+// here details are kept to support easy implementation later
+static function bool IsSearchedImageFound(this Image template, Image image)
     int epsilon = 10;
-    // similarity is set to default as 80%
-    ImageTemplateMatchingLibrary etm = new ImageTemplateMatchingLibrary(0.80)
+    // similarity is set to default as 80% 
+    // can read it from config.config file
+    etm = new ImageTemplateMatching(0.80)
     TemplateMatch[] tm = etm.ProcessImage(
         new ResizeNearestNeighbor(template.Width, template.Height).Apply(template),
         new ResizeNearestNeighbor(image.Width, image.Height).Apply(image)
